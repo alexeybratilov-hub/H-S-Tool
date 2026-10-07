@@ -19,4 +19,6 @@ __pycache__/
 *.xlsx
 *.pdf
 
-.env
+.env*.bak
+*.bak_*
+.streamlit/*.bak*

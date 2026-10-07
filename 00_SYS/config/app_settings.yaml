@@ -1,0 +1,30 @@
+app:
+  name: "OT Local Agent"
+  version: "0.1.0"
+  mode: "local_only"
+
+security:
+  bind_address: "127.0.0.1"
+  allow_cloud: false
+  allow_auto_send: false
+  allow_external_network: false
+  medical_data_minimization: true
+  psychiatric_data_minimization: true
+  diagnoses_storage_forbidden: true
+
+llm:
+  provider: "ollama"
+  base_url: "http://127.0.0.1:11434"
+  primary_model: "hf.co/empero-ai/Qwen3.8-9B-Distill-GGUF:Q4_K_M"
+  secondary_model: "hf.co/empero-ai/Qwen3.8-9B-Distill-GGUF:Q4_K_M"
+  context_length: 4096
+  temperature: 0.1
+  top_p: 0.9
+  max_new_tokens: 1500
+
+paths:
+  database: "00_SYS/ot_local_agent.sqlite"
+  logs: "00_SYS/logs"
+  backups: "00_SYS/backups"
+  tmp: "00_SYS/tmp"
+  exports: "05_OUTPUTS/exported_docx"

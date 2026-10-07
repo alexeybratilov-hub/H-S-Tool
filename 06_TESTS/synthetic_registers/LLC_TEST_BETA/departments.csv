@@ -1,0 +1,4 @@
+department_id,company_id,name,parent_department_id,responsible_employee_id,status
+DEP_MAIN_B,LLC_TEST_BETA,Руководство,,E101,ACTIVE
+DEP_IT,LLC_TEST_BETA,ИТ-отдел,DEP_MAIN_B,E102,ACTIVE
+DEP_ACCOUNTING,LLC_TEST_BETA,Бухгалтерия,DEP_MAIN_B,E103,ACTIVE

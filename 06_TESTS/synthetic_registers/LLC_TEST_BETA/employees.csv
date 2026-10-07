@@ -1,0 +1,4 @@
+employee_id,company_id,full_name,personnel_number,position_id,department_id,hire_date,status
+E101,LLC_TEST_BETA,Смирнов Сергей Сергеевич,201,POS_DIRECTOR_B,DEP_MAIN_B,2020-01-01,ACTIVE
+E102,LLC_TEST_BETA,Волкова Елена Ивановна,202,POS_IT_LEAD_B,DEP_IT,2021-06-01,ACTIVE
+E103,LLC_TEST_BETA,Морозов Дмитрий Александрович,203,POS_ACCOUNTANT_B,DEP_ACCOUNTING,2022-09-01,ACTIVE

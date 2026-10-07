@@ -1,0 +1,4 @@
+position_id,company_id,title,department_id,headcount,effective_from,status
+POS_DIRECTOR_B,LLC_TEST_BETA,Директор,DEP_MAIN_B,1,2026-01-01,ACTIVE
+POS_IT_LEAD_B,LLC_TEST_BETA,Руководитель ИТ,DEP_IT,1,2026-01-01,ACTIVE
+POS_ACCOUNTANT_B,LLC_TEST_BETA,Бухгалтер,DEP_ACCOUNTING,1,2026-01-01,ACTIVE

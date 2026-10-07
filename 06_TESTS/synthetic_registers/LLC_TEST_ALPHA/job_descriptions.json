@@ -1,0 +1,24 @@
+[
+  {
+    "job_description_id": "JD_LLC_TEST_ALPHA_001",
+    "company_id": "LLC_TEST_ALPHA",
+    "position_id": "POS_OT_SPECIALIST",
+    "title": "Специалист по охране труда",
+    "source_file": "synthetic_job_description.txt",
+    "text_content": "Synthetic job description for testing data pipeline. Not a legal document. No personal data. Requires verification by an occupational health and safety specialist before any use.",
+    "version": "v01",
+    "status": "RAW",
+    "effective_date": "2026-01-01"
+  },
+  {
+    "job_description_id": "JD_LLC_TEST_ALPHA_002",
+    "company_id": "LLC_TEST_ALPHA",
+    "position_id": "POS_WAREHOUSE_MANAGER",
+    "title": "Заведующий складом",
+    "source_file": "synthetic_job_description.txt",
+    "text_content": "Synthetic job description for testing data pipeline. Not a legal document. No personal data. Requires verification by an occupational health and safety specialist before any use.",
+    "version": "v01",
+    "status": "RAW",
+    "effective_date": "2026-01-01"
+  }
+]

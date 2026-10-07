@@ -1,0 +1,13 @@
+[
+  {
+    "job_description_id": "JD_LLC_TEST_BETA_001",
+    "company_id": "LLC_TEST_BETA",
+    "position_id": "POS_IT_LEAD_B",
+    "title": "Руководитель ИТ",
+    "source_file": "synthetic_job_description.txt",
+    "text_content": "Synthetic job description for testing data pipeline. Not a legal document. No personal data. Requires verification by an occupational health and safety specialist before any use.",
+    "version": "v01",
+    "status": "RAW",
+    "effective_date": "2026-01-01"
+  }
+]

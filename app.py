@@ -10,12 +10,19 @@ if str(SRC_DIR) not in sys.path:
 import streamlit as st
 
 from ot_agent.db import init_db
+from ot_agent.regulatory_db import init_regulatory_schema
 from ot_agent.security import get_security_notice
-from ot_agent.staffing_db import init_staffing_schema
-from ot_agent.ui import companies, dashboard, registers, settings, staffing
+from ot_agent.ui import (
+    companies,
+    dashboard,
+    normative_base,
+    registers,
+    settings,
+    staffing,
+)
 
 init_db()
-init_staffing_schema()
+init_regulatory_schema()
 
 st.set_page_config(
     page_title="OT Local Agent",
@@ -33,6 +40,7 @@ page = st.sidebar.radio(
         "Companies",
         "Registers",
         "Staffing",
+        "Normative Base",
         "Settings",
     ],
 )
@@ -45,5 +53,7 @@ elif page == "Registers":
     registers.render()
 elif page == "Staffing":
     staffing.render()
+elif page == "Normative Base":
+    normative_base.render()
 else:
     settings.render()

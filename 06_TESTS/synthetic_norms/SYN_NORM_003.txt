@@ -1,0 +1,11 @@
+SYNTHETIC NORMATIVE FRAGMENT.
+
+This is a technical test object for operational control workflow.
+
+It is not a real legal requirement.
+It does not define inspection powers.
+It does not define corrective action deadlines.
+
+Synthetic subject: inspection, finding, corrective action, closure, work permit placeholder.
+
+This fragment is provided only to test event-based operational documents later.

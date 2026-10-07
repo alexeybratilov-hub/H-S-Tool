@@ -1,0 +1,12 @@
+SYNTHETIC NORMATIVE FRAGMENT.
+
+This is a technical test object for medical examination metadata workflow.
+
+It is not a real legal requirement.
+It does not establish examination intervals.
+It does not establish contingents.
+It does not contain medical diagnoses.
+
+Synthetic subject: periodic medical examination metadata, deadline control, document drafting placeholder.
+
+This fragment is provided only to test metadata minimization and verification status handling.

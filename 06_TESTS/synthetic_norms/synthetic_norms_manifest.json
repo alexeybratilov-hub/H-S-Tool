@@ -1,0 +1,98 @@
+{
+  "description": "Synthetic normative fragments for pipeline testing only. Not legal sources.",
+  "sources": [
+    {
+      "source_id": "SYN_NORM_001",
+      "title": "Synthetic Occupational Safety Requirement Alpha",
+      "doctype": "TEST_RULE",
+      "issuer": "TEST_AUTHORITY",
+      "approval_date": "2026-01-01",
+      "effective_date": "2026-01-01",
+      "status": "ACTIVE",
+      "topic": "OT",
+      "industry": "TEST",
+      "file_path": "06_TESTS/synthetic_norms/SYN_NORM_001.txt",
+      "source_reference": "SYNTHETIC_TEST_DATA",
+      "retrieval_date": "2026-10-08",
+      "review_date": null,
+      "verified_by": null,
+      "verification_status": "REQUIRES_VERIFICATION",
+      "comment": "Synthetic source. Requires manual verification before any use.",
+      "chunks": [
+        {
+          "chunk_id": "SYN_CHUNK_001_01",
+          "heading_path": "Section 1. Synthetic warehouse and height requirements",
+          "chunk_index": 0,
+          "text_file": "06_TESTS/synthetic_norms/SYN_NORM_001.txt",
+          "keywords": "warehouse height ppe training briefing moving_loads",
+          "obligation_type": "TEST_OBLIGATION",
+          "topic": "OT",
+          "status": "PARSED",
+          "confidence_tag": "REQUIRES_VERIFICATION"
+        }
+      ]
+    },
+    {
+      "source_id": "SYN_NORM_002",
+      "title": "Synthetic Medical Examination Metadata Placeholder",
+      "doctype": "TEST_RULE",
+      "issuer": "TEST_AUTHORITY",
+      "approval_date": "2026-01-01",
+      "effective_date": "2026-01-01",
+      "status": "ACTIVE",
+      "topic": "OT",
+      "industry": "TEST",
+      "file_path": "06_TESTS/synthetic_norms/SYN_NORM_002.txt",
+      "source_reference": "SYNTHETIC_TEST_DATA",
+      "retrieval_date": "2026-10-08",
+      "review_date": null,
+      "verified_by": null,
+      "verification_status": "REQUIRES_VERIFICATION",
+      "comment": "Synthetic source. Does not establish medical intervals or contingents.",
+      "chunks": [
+        {
+          "chunk_id": "SYN_CHUNK_002_01",
+          "heading_path": "Section 1. Synthetic medical metadata workflow",
+          "chunk_index": 0,
+          "text_file": "06_TESTS/synthetic_norms/SYN_NORM_002.txt",
+          "keywords": "medical examination metadata deadline contingent placeholder",
+          "obligation_type": "TEST_METADATA",
+          "topic": "OT",
+          "status": "PARSED",
+          "confidence_tag": "REQUIRES_VERIFICATION"
+        }
+      ]
+    },
+    {
+      "source_id": "SYN_NORM_003",
+      "title": "Synthetic Operational Control Placeholder",
+      "doctype": "TEST_RULE",
+      "issuer": "TEST_AUTHORITY",
+      "approval_date": "2026-01-01",
+      "effective_date": "2026-01-01",
+      "status": "ACTIVE",
+      "topic": "OT",
+      "industry": "TEST",
+      "file_path": "06_TESTS/synthetic_norms/SYN_NORM_003.txt",
+      "source_reference": "SYNTHETIC_TEST_DATA",
+      "retrieval_date": "2026-10-08",
+      "review_date": null,
+      "verified_by": null,
+      "verification_status": "REQUIRES_VERIFICATION",
+      "comment": "Synthetic source for future event-based operational documents.",
+      "chunks": [
+        {
+          "chunk_id": "SYN_CHUNK_003_01",
+          "heading_path": "Section 1. Synthetic inspection and corrective action workflow",
+          "chunk_index": 0,
+          "text_file": "06_TESTS/synthetic_norms/SYN_NORM_003.txt",
+          "keywords": "inspection finding corrective_action closure work_permit operational",
+          "obligation_type": "TEST_OPERATIONAL",
+          "topic": "OT",
+          "status": "PARSED",
+          "confidence_tag": "REQUIRES_VERIFICATION"
+        }
+      ]
+    }
+  ]
+}

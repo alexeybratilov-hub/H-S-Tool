@@ -1,0 +1,11 @@
+SYNTHETIC NORMATIVE FRAGMENT.
+
+This is a technical test object for the OT Local Agent data pipeline.
+
+It is not a real legal requirement.
+It is not an official normative act.
+It must not be used in an approved occupational health and safety document.
+
+Synthetic subject: warehouse operations, work at height, moving loads, PPE, training, briefing.
+
+This fragment is provided only to test source registration, chunk storage, keyword search, and human verification workflow.

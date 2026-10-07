@@ -1,0 +1,5 @@
+position_id,company_id,title,department_id,headcount,effective_from,status
+POS_DIRECTOR,LLC_TEST_ALPHA,Директор,DEP_MAIN,1,2026-01-01,ACTIVE
+POS_OT_SPECIALIST,LLC_TEST_ALPHA,Специалист по охране труда,DEP_OT,1,2026-01-01,ACTIVE
+POS_WAREHOUSE_MANAGER,LLC_TEST_ALPHA,Заведующий складом,DEP_WAREHOUSE,1,2026-01-01,ACTIVE
+POS_STOREKEEPER,LLC_TEST_ALPHA,Кладовщик,DEP_WAREHOUSE,2,2026-01-01,ACTIVE

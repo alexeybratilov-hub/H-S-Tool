@@ -1,0 +1,4 @@
+department_id,company_id,name,parent_department_id,responsible_employee_id,status
+DEP_MAIN,LLC_TEST_ALPHA,Руководство,,E001,ACTIVE
+DEP_OT,LLC_TEST_ALPHA,Отдел охраны труда,DEP_MAIN,E002,ACTIVE
+DEP_WAREHOUSE,LLC_TEST_ALPHA,Склад,DEP_MAIN,E003,ACTIVE

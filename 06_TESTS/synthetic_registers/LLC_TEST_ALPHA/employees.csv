@@ -1,0 +1,5 @@
+employee_id,company_id,full_name,personnel_number,position_id,department_id,hire_date,status
+E001,LLC_TEST_ALPHA,Иванов Иван Иванович,101,POS_DIRECTOR,DEP_MAIN,2020-05-01,ACTIVE
+E002,LLC_TEST_ALPHA,Петрова Анна Сергеевна,102,POS_OT_SPECIALIST,DEP_OT,2021-02-15,ACTIVE
+E003,LLC_TEST_ALPHA,Сидоров Павел Павлович,103,POS_WAREHOUSE_MANAGER,DEP_WAREHOUSE,2022-03-01,ACTIVE
+E004,LLC_TEST_ALPHA,Кузнецова Мария Ивановна,104,POS_STOREKEEPER,DEP_WAREHOUSE,2023-04-10,ACTIVE

@@ -48,14 +48,35 @@ def render() -> None:
     counts = count_registers(company_id)
 
     col1, col2, col3 = st.columns(3)
-    col1.metric("Подразделения", counts.get("departments", 0))
-    col2.metric("Должности", counts.get("positions", 0))
-    col3.metric("Сотрудники", counts.get("employees", 0))
 
-    st.caption(f"Отображаются только данные компании: {company_id}")
+    col1.metric(
+        "\u041f\u043e\u0434\u0440\u0430\u0437\u0434\u0435\u043b\u0435\u043d\u0438\u044f",
+        counts.get("departments", 0),
+    )
+
+    col2.metric(
+        "\u0414\u043e\u043b\u0436\u043d\u043e\u0441\u0442\u0438",
+        counts.get("positions", 0),
+    )
+
+    col3.metric(
+        "\u0421\u043e\u0442\u0440\u0443\u0434\u043d\u0438\u043a\u0438",
+        counts.get("employees", 0),
+    )
+
+    st.caption(
+        "\u041e\u0442\u043e\u0431\u0440\u0430\u0436\u0430\u044e\u0442\u0441\u044f "
+        "\u0442\u043e\u043b\u044c\u043a\u043e \u0434\u0430\u043d\u043d\u044b\u0435 "
+        "\u043a\u043e\u043c\u043f\u0430\u043d\u0438\u0438: "
+        f"{company_id}"
+    )
 
     tab_departments, tab_positions, tab_employees = st.tabs(
-        ["Подразделения", "Должности", "Сотрудники"]
+        [
+            "\u041f\u043e\u0434\u0440\u0430\u0437\u0434\u0435\u043b\u0435\u043d\u0438\u044f",
+            "\u0414\u043e\u043b\u0436\u043d\u043e\u0441\u0442\u0438",
+            "\u0421\u043e\u0442\u0440\u0443\u0434\u043d\u0438\u043a\u0438",
+        ]
     )
 
     with tab_departments:
@@ -72,7 +93,7 @@ def render() -> None:
         st.dataframe(
             _rows_to_dataframe(rows, columns),
             hide_index=True,
-            use_container_width=True,
+            width="stretch",
         )
 
     with tab_positions:
@@ -90,7 +111,7 @@ def render() -> None:
         st.dataframe(
             _rows_to_dataframe(rows, columns),
             hide_index=True,
-            use_container_width=True,
+            width="stretch",
         )
 
     with tab_employees:
@@ -111,5 +132,5 @@ def render() -> None:
         st.dataframe(
             _rows_to_dataframe(rows, columns),
             hide_index=True,
-            use_container_width=True,
+            width="stretch",
         )

@@ -6,13 +6,19 @@ from ot_agent.db import list_companies
 
 
 def render_company_selector(
-    label: str = "Текущая компания",
+    label: str = "\u0422\u0435\u043a\u0443\u0449\u0430\u044f \u043a\u043e\u043c\u043f\u0430\u043d\u0438\u044f",
     key: str = "global_company_selector",
 ) -> str | None:
     companies = list_companies()
 
     if not companies:
-        st.warning("Сначала создайте хотя бы одну компанию в разделе Companies.")
+        st.warning(
+            "\u0421\u043d\u0430\u0447\u0430\u043b\u0430 "
+            "\u0441\u043e\u0437\u0434\u0430\u0439\u0442\u0435 "
+            "\u0445\u043e\u0442\u044f \u0431\u044b "
+            "\u043e\u0434\u043d\u0443 \u043a\u043e\u043c\u043f\u0430\u043d\u0438\u044e "
+            "\u0432 \u0440\u0430\u0437\u0434\u0435\u043b\u0435 Companies."
+        )
         return None
 
     options = [str(company["company_id"]) for company in companies]

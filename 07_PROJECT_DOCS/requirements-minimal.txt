@@ -1,0 +1,7 @@
+streamlit
+pandas
+openpyxl
+python-docx
+docxtpl
+diff-match-patch
+pyyaml

@@ -193,10 +193,12 @@ def list_companies() -> list[dict[str, Any]]:
 
 
 def get_company(company_id: str) -> dict[str, Any] | None:
-    company_id = _clean(company_id)
+    cid = _clean(company_id)
 
-    if not company_id:
+    if not cid:
         return None
+
+    cid = str(cid)
 
     with connect() as conn:
         row = conn.execute(
@@ -205,7 +207,7 @@ def get_company(company_id: str) -> dict[str, Any] | None:
             FROM companies
             WHERE company_id = ?
             """,
-            (company_id,),
+            (cid,),
         ).fetchone()
 
         return dict(row) if row else None
@@ -225,12 +227,14 @@ def create_company(data: dict[str, Any]) -> dict[str, Any]:
     if not legal_name:
         raise ValueError("Поле legal_name обязательно.")
 
-    if company_exists(str(company_id)):
+    company_id = str(company_id)
+
+    if company_exists(company_id):
         raise ValueError(f"Компания с company_id={company_id} уже существует.")
 
     payload = (
         company_id,
-        legal_name,
+        str(legal_name),
         _clean(data.get("short_name")),
         _clean(data.get("inn")),
         _clean(data.get("kpp")),
@@ -272,9 +276,161 @@ def create_company(data: dict[str, Any]) -> dict[str, Any]:
         )
         conn.commit()
 
-    created = get_company(str(company_id))
+    created = get_company(company_id)
 
     if created is None:
         raise RuntimeError("Компания создана, но не найдена в базе данных.")
 
     return created
+
+
+def list_departments(company_id: str) -> list[dict[str, Any]]:
+    cid = _clean(company_id)
+
+    if not cid:
+        return []
+
+    cid = str(cid)
+
+    with connect() as conn:
+        rows = conn.execute(
+            """
+            SELECT
+                d.department_id,
+                d.company_id,
+                d.name,
+                d.parent_department_id,
+                p.name AS parent_department_name,
+                d.responsible_employee_id,
+                e.full_name AS responsible_employee_name,
+                d.status,
+                d.created_at,
+                d.updated_at
+            FROM departments d
+            LEFT JOIN departments p
+                ON p.department_id = d.parent_department_id
+                AND p.company_id = d.company_id
+            LEFT JOIN employees e
+                ON e.employee_id = d.responsible_employee_id
+                AND e.company_id = d.company_id
+            WHERE d.company_id = ?
+            ORDER BY d.name
+            """,
+            (cid,),
+        ).fetchall()
+
+        return [dict(row) for row in rows]
+
+
+def list_positions(company_id: str) -> list[dict[str, Any]]:
+    cid = _clean(company_id)
+
+    if not cid:
+        return []
+
+    cid = str(cid)
+
+    with connect() as conn:
+        rows = conn.execute(
+            """
+            SELECT
+                pos.position_id,
+                pos.company_id,
+                pos.title,
+                pos.department_id,
+                dep.name AS department_name,
+                pos.headcount,
+                pos.effective_from,
+                pos.effective_to,
+                pos.status,
+                pos.created_at,
+                pos.updated_at
+            FROM positions pos
+            LEFT JOIN departments dep
+                ON dep.department_id = pos.department_id
+                AND dep.company_id = pos.company_id
+            WHERE pos.company_id = ?
+            ORDER BY pos.title
+            """,
+            (cid,),
+        ).fetchall()
+
+        return [dict(row) for row in rows]
+
+
+def list_employees(company_id: str) -> list[dict[str, Any]]:
+    cid = _clean(company_id)
+
+    if not cid:
+        return []
+
+    cid = str(cid)
+
+    with connect() as conn:
+        rows = conn.execute(
+            """
+            SELECT
+                emp.employee_id,
+                emp.company_id,
+                emp.full_name,
+                emp.initials,
+                emp.personnel_number,
+                emp.position_id,
+                pos.title AS position_title,
+                emp.department_id,
+                dep.name AS department_name,
+                emp.hire_date,
+                emp.termination_date,
+                emp.status,
+                emp.comment,
+                emp.created_at,
+                emp.updated_at
+            FROM employees emp
+            LEFT JOIN positions pos
+                ON pos.position_id = emp.position_id
+                AND pos.company_id = emp.company_id
+            LEFT JOIN departments dep
+                ON dep.department_id = emp.department_id
+                AND dep.company_id = emp.company_id
+            WHERE emp.company_id = ?
+            ORDER BY emp.full_name
+            """,
+            (cid,),
+        ).fetchall()
+
+        return [dict(row) for row in rows]
+
+
+def count_registers(company_id: str) -> dict[str, int]:
+    cid = _clean(company_id)
+
+    if not cid:
+        return {
+            "departments": 0,
+            "positions": 0,
+            "employees": 0,
+        }
+
+    cid = str(cid)
+
+    with connect() as conn:
+        departments = conn.execute(
+            "SELECT COUNT(*) FROM departments WHERE company_id = ?",
+            (cid,),
+        ).fetchone()[0]
+
+        positions = conn.execute(
+            "SELECT COUNT(*) FROM positions WHERE company_id = ?",
+            (cid,),
+        ).fetchone()[0]
+
+        employees = conn.execute(
+            "SELECT COUNT(*) FROM employees WHERE company_id = ?",
+            (cid,),
+        ).fetchone()[0]
+
+    return {
+        "departments": int(departments),
+        "positions": int(positions),
+        "employees": int(employees),
+    }

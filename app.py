@@ -11,7 +11,7 @@ import streamlit as st
 
 from ot_agent.db import init_db
 from ot_agent.security import get_security_notice
-from ot_agent.ui import companies, dashboard, settings
+from ot_agent.ui import companies, dashboard, registers, settings
 
 init_db()
 
@@ -29,6 +29,7 @@ page = st.sidebar.radio(
     [
         "Dashboard",
         "Companies",
+        "Registers",
         "Settings",
     ],
 )
@@ -37,5 +38,7 @@ if page == "Dashboard":
     dashboard.render()
 elif page == "Companies":
     companies.render()
+elif page == "Registers":
+    registers.render()
 else:
     settings.render()

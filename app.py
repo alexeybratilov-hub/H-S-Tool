@@ -12,8 +12,10 @@ import streamlit as st
 from ot_agent.applicability_db import init_applicability_schema
 from ot_agent.db import init_db
 from ot_agent.regulatory_db import init_regulatory_schema
+from ot_agent.baseline_db import get_connection, init_baseline_schema
 from ot_agent.security import get_security_notice
 from ot_agent.ui import (
+    baseline_catalog,
     companies,
     dashboard,
     normative_base,
@@ -45,6 +47,7 @@ page = st.sidebar.radio(
         "Staffing",
         "Normative Base",
         "Norm Applicability",
+        "Baseline Catalog",
         "Settings",
     ],
 )
@@ -61,5 +64,7 @@ elif page == "Normative Base":
     normative_base.render()
 elif page == "Norm Applicability":
     norm_applicability.render()
+elif page == "Baseline Catalog":
+    baseline_catalog.render()
 else:
     settings.render()

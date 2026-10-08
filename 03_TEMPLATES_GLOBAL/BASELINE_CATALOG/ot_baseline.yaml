@@ -1,0 +1,129 @@
+catalog_version: "0.1.0"
+topic_default: OT
+
+disclaimer: >
+  Синтетический технический каталог. Не является юридически полным или
+  обязательным перечнем документов по охране труда. Каждая позиция требует
+  подтверждения специалистом по охране труда.
+
+defaults:
+  type: &type_defaults
+    topic: OT
+  document: &doc_defaults
+    topic: OT
+    applicability_note: "[УТОЧНИТЬ: применимость для конкретной компании подтверждается специалистом.]"
+    legal_basis_note: "[НЕТ ИСТОЧНИКА: нормативное основание должно быть загружено пользователем.]"
+    status: SUGGESTED
+    verification_status: REQUIRES_VERIFICATION
+
+document_types:
+  - <<: *type_defaults
+    type_id: DT_OT_POLICY
+    code: POLICY
+    title: "Политика"
+  - <<: *type_defaults
+    type_id: DT_OT_REGULATION
+    code: REGULATION
+    title: "Положение"
+  - <<: *type_defaults
+    type_id: DT_OT_ORDER
+    code: ORDER
+    title: "Приказ"
+  - <<: *type_defaults
+    type_id: DT_OT_INSTRUCTION
+    code: INSTRUCTION
+    title: "Инструкция"
+  - <<: *type_defaults
+    type_id: DT_OT_PROGRAM
+    code: PROGRAM
+    title: "Программа"
+  - <<: *type_defaults
+    type_id: DT_OT_JOURNAL
+    code: JOURNAL
+    title: "Журнал"
+  - <<: *type_defaults
+    type_id: DT_OT_PLAN
+    code: PLAN
+    title: "План"
+  - <<: *type_defaults
+    type_id: DT_OT_NOTIFICATION
+    code: NOTIFICATION
+    title: "Лист ознакомления"
+  - <<: *type_defaults
+    type_id: DT_OT_REPORT
+    code: REPORT
+    title: "Отчёт"
+
+baseline_documents:
+  - <<: *doc_defaults
+    document_id: BD_OT_0001
+    type_code: POLICY
+    code: OT_POL_001
+    title: "Политика в области охраны труда"
+    category: "Локальный нормативный акт"
+    lifecycle_stage: "Организация работ по охране труда"
+    template_id: TPL_OT_POL_001
+    sort_order: 10
+  - <<: *doc_defaults
+    document_id: BD_OT_0002
+    type_code: REGULATION
+    code: OT_REG_001
+    title: "Положение о системе управления охраной труда"
+    category: "Локальный нормативный акт"
+    lifecycle_stage: "Организация работ по охране труда"
+    template_id: TPL_OT_REG_001
+    sort_order: 20
+  - <<: *doc_defaults
+    document_id: BD_OT_0004
+    type_code: ORDER
+    code: OT_ORD_001
+    title: "Приказ о назначении ответственного за охрану труда"
+    category: "Организационно-распорядительный документ"
+    lifecycle_stage: "Назначение ответственных лиц"
+    template_id: TPL_OT_ORD_001
+    sort_order: 40
+  - <<: *doc_defaults
+    document_id: BD_OT_0006
+    type_code: PROGRAM
+    code: OT_PRG_001
+    title: "Программа вводного инструктажа по охране труда"
+    category: "Инструктажи и обучение"
+    lifecycle_stage: "Инструктажи"
+    template_id: TPL_OT_PRG_001
+    sort_order: 60
+  - <<: *doc_defaults
+    document_id: BD_OT_0008
+    type_code: INSTRUCTION
+    code: OT_INS_001
+    title: "Инструкция по охране труда для офисных работников"
+    category: "Инструкции по охране труда"
+    lifecycle_stage: "Разработка инструкций"
+    template_id: TPL_OT_INS_001
+    sort_order: 80
+  - <<: *doc_defaults
+    document_id: BD_OT_0011
+    type_code: JOURNAL
+    code: OT_JRN_001
+    title: "Журнал регистрации вводного инструктажа"
+    category: "Журналы учёта"
+    lifecycle_stage: "Регистрация инструктажей"
+    template_id: TPL_OT_JRN_001
+    sort_order: 110
+  - <<: *doc_defaults
+    document_id: BD_OT_0013
+    type_code: PLAN
+    code: OT_PLN_001
+    title: "План мероприятий по улучшению условий и охраны труда"
+    category: "Планирование мероприятий"
+    lifecycle_stage: "Планирование"
+    template_id: TPL_OT_PLN_001
+    sort_order: 130
+  - <<: *doc_defaults
+    document_id: BD_OT_0015
+    type_code: NOTIFICATION
+    code: OT_NTF_001
+    title: "Лист ознакомления / уведомление"
+    category: "Ознакомление работников"
+    lifecycle_stage: "Ознакомление"
+    template_id: TPL_OT_NTF_001
+    sort_order: 150

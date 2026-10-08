@@ -8,6 +8,7 @@ if str(SRC_DIR) not in sys.path:
     sys.path.insert(0, str(SRC_DIR))
 
 import streamlit as st
+from ot_agent.drafts_db import init_draft_schema
 from ot_agent.package_planner_db import init_package_schema
 from ot_agent.position_profiles_db import init_position_profiles_schema
 from ot_agent.responsibility_db import init_responsibility_schema
@@ -18,6 +19,7 @@ from ot_agent.regulatory_db import init_regulatory_schema
 from ot_agent.baseline_db import get_connection, init_baseline_schema
 from ot_agent.security import get_security_notice
 from ot_agent.ui import (
+    drafts,
     package_planner,
     position_profiles,
     responsibilities,
@@ -37,6 +39,7 @@ init_applicability_schema()
 init_responsibility_schema()
 init_position_profiles_schema()
 init_package_schema()
+init_draft_schema()
 
 st.set_page_config(
     page_title="OT Local Agent",
@@ -60,6 +63,7 @@ page = st.sidebar.radio(
         "Чеклист ответственных",
         "Профили должностей",
         "Пакетдокументов",
+        "Черновики",
         "Настройки",
     ],
 )
@@ -84,5 +88,7 @@ elif page == "Профили должностей":
     position_profiles.render()
 elif page == "Пакетдокументов":
     package_planner.render()
+elif page == "Черновики":
+    drafts.render()
 else:
     settings.render()

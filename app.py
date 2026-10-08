@@ -39,32 +39,32 @@ st.title("OT Local Agent \u2014 \u043b\u043e\u043a\u0430\u043b\u044c\u043d\u044b
 st.caption(get_security_notice())
 
 page = st.sidebar.radio(
-    "Sections",
+    "Разделы",
     [
-        "Dashboard",
-        "Companies",
-        "Registers",
-        "Staffing",
-        "Normative Base",
-        "Norm Applicability",
-        "Baseline Catalog",
-        "Settings",
+        "Панель управления",
+        "Компании",
+        "Реестры",
+        "Штатное расписание",
+        "Нормативная база",
+        "Применимость норм",
+        "Базовый каталог",
+        "Настройки",
     ],
 )
 
-if page == "Dashboard":
+if page == "Панель управления":
     dashboard.render()
-elif page == "Companies":
+elif page == "Компании":
     companies.render()
-elif page == "Registers":
+elif page == "Реестры":
     registers.render()
-elif page == "Staffing":
+elif page == "Штатное расписание":
     staffing.render()
-elif page == "Normative Base":
+elif page == "Нормативная база":
     normative_base.render()
-elif page == "Norm Applicability":
+elif page == "Применимость норм":
     norm_applicability.render()
-elif page == "Baseline Catalog":
+elif page == "Базовый каталог":
     baseline_catalog.render()
 else:
     settings.render()

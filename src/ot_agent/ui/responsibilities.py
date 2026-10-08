@@ -31,9 +31,17 @@ def render_responsibilities() -> None:
 
     st.warning(
         "DRAFT / REQUIRES_VERIFICATION. "
-        "Synthetic technical checklist. "
-        "Not a legal register. "
-        "Role codes are technical identifiers and require verification."
+        "\u0421\u0438\u043d\u0442\u0435\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 "
+        "\u0442\u0435\u0445\u043d\u0438\u0447\u0435\u0441\u043a\u0438\u0439 "
+        "\u0447\u0435\u043a\u043b\u0438\u0441\u0442. "
+        "\u041d\u0435 \u044e\u0440\u0438\u0434\u0438\u0447\u0435\u0441\u043a\u0438\u0439 "
+        "\u0440\u0435\u0435\u0441\u0442\u0440. "
+        "\u041a\u043e\u0434\u044b \u0440\u043e\u043b\u0435\u0439 "
+        "\u044f\u0432\u043b\u044f\u044e\u0442\u0441\u044f "
+        "\u0442\u0435\u0445\u043d\u0438\u0447\u0435\u0441\u043a\u0438\u043c\u0438 "
+        "\u0438\u0434\u0435\u043d\u0442\u0438\u0444\u0438\u043a\u0430\u0442\u043e\u0440\u0430\u043c\u0438 "
+        "\u0438 \u0442\u0440\u0435\u0431\u0443\u044e\u0442 "
+        "\u043f\u0440\u043e\u0432\u0435\u0440\u043a\u0438."
     )
 
     conn = get_connection(DB_PATH)
@@ -42,14 +50,23 @@ def render_responsibilities() -> None:
         companies = list_companies(conn)
 
         if not companies:
-            st.info("No companies found.")
+            st.info(
+                "\u041a\u043e\u043c\u043f\u0430\u043d\u0438\u0438 "
+                "\u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u044b."
+            )
             return
 
-        company_labels = [company["display_name"] for company in companies]
-        company_ids = [company["company_id"] for company in companies]
+        company_labels = [
+            company["display_name"]
+            for company in companies
+        ]
+        company_ids = [
+            company["company_id"]
+            for company in companies
+        ]
 
         company_index = st.selectbox(
-            "Company",
+            "\u041a\u043e\u043c\u043f\u0430\u043d\u0438\u044f",
             range(len(company_labels)),
             format_func=lambda i: company_labels[i],
         )
@@ -59,7 +76,10 @@ def render_responsibilities() -> None:
         counts = count_assignments_by_status(conn, company_id)
 
         c1, c2, c3, c4, c5, c6 = st.columns(6)
-        c1.metric("Total", counts["total"])
+        c1.metric(
+            "\u0412\u0441\u0435\u0433\u043e",
+            counts["total"],
+        )
         c2.metric("PROPOSED", counts["PROPOSED"])
         c3.metric("CONFIRMED", counts["CONFIRMED"])
         c4.metric("MISSING_EVIDENCE", counts["MISSING_EVIDENCE"])
@@ -71,22 +91,40 @@ def render_responsibilities() -> None:
         if assignments:
             st.dataframe(assignments, hide_index=True, width="stretch")
         else:
-            st.info("No assignments for this company.")
+            st.info(
+                "\u041d\u0430\u0437\u043d\u0430\u0447\u0435\u043d\u0438\u044f "
+                "\u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u044b."
+            )
 
-        with st.expander("Add or update assignment"):
+        with st.expander(
+            "\u0414\u043e\u0431\u0430\u0432\u0438\u0442\u044c "
+            "\u0438\u043b\u0438 \u043e\u0431\u043d\u043e\u0432\u0438\u0442\u044c "
+            "\u043d\u0430\u0437\u043d\u0430\u0447\u0435\u043d\u0438\u0435"
+        ):
             roles = list_roles(conn)
             employees = list_employees(conn, company_id)
 
             if not roles:
-                st.info("No roles found.")
+                st.info(
+                    "\u0420\u043e\u043b\u0438 "
+                    "\u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u044b."
+                )
             elif not employees:
-                st.info("No employees found for the selected company.")
+                st.info(
+                    "\u0421\u043e\u0442\u0440\u0443\u0434\u043d\u0438\u043a\u0438 "
+                    "\u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u044b "
+                    "\u0434\u043b\u044f \u0432\u044b\u0431\u0440\u0430\u043d\u043d\u043e\u0439 "
+                    "\u043a\u043e\u043c\u043f\u0430\u043d\u0438\u0438."
+                )
             else:
                 role_labels = [
                     f"{role['code']} | {role['title']}"
                     for role in roles
                 ]
-                role_ids = [role["role_id"] for role in roles]
+                role_ids = [
+                    role["role_id"]
+                    for role in roles
+                ]
 
                 employee_labels = [
                     f"{employee['employee_id']} | {employee['display_name']}"
@@ -98,50 +136,56 @@ def render_responsibilities() -> None:
                 ]
 
                 role_index = st.selectbox(
-                    "Role",
+                    "\u0420\u043e\u043b\u044c",
                     range(len(role_labels)),
                     format_func=lambda i: role_labels[i],
                 )
 
                 employee_index = st.selectbox(
-                    "Employee",
+                    "\u0421\u043e\u0442\u0440\u0443\u0434\u043d\u0438\u043a",
                     range(len(employee_labels)),
                     format_func=lambda i: employee_labels[i],
                 )
 
                 status = st.selectbox(
-                    "Status",
+                    "\u0421\u0442\u0430\u0442\u0443\u0441",
                     STATUS_OPTIONS,
                     index=0,
                 )
 
                 evidence_note = st.text_input(
-                    "Evidence note",
+                    "\u0417\u0430\u043c\u0435\u0442\u043a\u0430 "
+                    "\u043e \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0435\u043d\u0438\u0438",
                     value="",
-                    placeholder="[TBD]",
+                    placeholder="[\u0423\u0422\u041e\u0427\u041d\u0418\u0422\u042c]",
                 )
 
                 confirmed_by = st.text_input(
-                    "Confirmed by",
+                    "\u041a\u0435\u043c \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0435\u043d\u043e",
                     value="",
                 )
 
                 comment = st.text_input(
-                    "Comment",
+                    "\u041a\u043e\u043c\u043c\u0435\u043d\u0442\u0430\u0440\u0438\u0439",
                     value="",
                 )
 
                 valid_from = st.text_input(
-                    "Valid from (YYYY-MM-DD)",
+                    "\u0414\u0435\u0439\u0441\u0442\u0432\u0443\u0435\u0442 "
+                    "\u0441 (YYYY-MM-DD)",
                     value="",
                 )
 
                 valid_until = st.text_input(
-                    "Valid until (YYYY-MM-DD)",
+                    "\u0414\u0435\u0439\u0441\u0442\u0432\u0443\u0435\u0442 "
+                    "\u043f\u043e (YYYY-MM-DD)",
                     value="",
                 )
 
-                if st.button("Save assignment"):
+                if st.button(
+                    "\u0421\u043e\u0445\u0440\u0430\u043d\u0438\u0442\u044c "
+                    "\u043d\u0430\u0437\u043d\u0430\u0447\u0435\u043d\u0438\u0435"
+                ):
                     try:
                         upsert_assignment(
                             conn,
@@ -156,7 +200,9 @@ def render_responsibilities() -> None:
                             valid_until=valid_until.strip() or None,
                         )
                         conn.commit()
-                        st.success("Saved.")
+                        st.success(
+                            "\u0421\u043e\u0445\u0440\u0430\u043d\u0435\u043d\u043e."
+                        )
                         st.rerun()
                     except Exception as exc:
                         st.error(str(exc))

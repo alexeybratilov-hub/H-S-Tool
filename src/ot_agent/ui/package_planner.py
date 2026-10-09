@@ -241,3 +241,19 @@ def render_package_planner() -> None:
 
 
 render = render_package_planner
+
+
+# STAGE13_REQUIREMENTS_UI_PATCH_BEGIN
+_orig_render_stage13 = globals().get("render")
+
+if callable(_orig_render_stage13):
+    def render(*args, **kwargs):
+        _orig_render_stage13(*args, **kwargs)
+
+        try:
+            from ot_agent.ui.stage13_requirements_view import render_stage13_requirements
+            render_stage13_requirements()
+        except Exception as exc:
+            import streamlit as st
+            st.error("Stage 13 requirements view error: " + str(exc))
+# STAGE13_REQUIREMENTS_UI_PATCH_END

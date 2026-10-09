@@ -145,5 +145,41 @@ def main():
     print("If OLLAMA status=UNAVAILABLE, start or install Ollama only when LLM generation is needed.")
 
 
+
+print("\n[STAGE13]")
+try:
+    import sqlite3
+    from pathlib import Path
+    _s13_db = Path(__file__).resolve().parents[1] / "00_SYS" / "ot_local_agent.sqlite"
+    _s13_conn = sqlite3.connect(str(_s13_db))
+    _s13_tables = (
+        "harmful_factors",
+        "sout_campaigns",
+        "sout_workplaces",
+        "sout_results",
+        "ppe_items",
+        "ppe_norms",
+        "employee_ppe_cards",
+        "ppe_issue_records",
+        "ppe_return_records",
+        "risk_register",
+    )
+    for _s13_table in _s13_tables:
+        _s13_exists = _s13_conn.execute(
+            "SELECT name FROM sqlite_master WHERE type='table' AND name=?",
+            (_s13_table,),
+        ).fetchone() is not None
+
+        if _s13_exists:
+            _s13_count = _s13_conn.execute("SELECT COUNT(*) FROM " + _s13_table).fetchone()[0]
+        else:
+            _s13_count = "MISSING"
+
+        print(f"{_s13_table}={_s13_count}")
+
+    _s13_conn.close()
+except Exception as _s13_exc:
+    print(f"stage13_error={_s13_exc}")
+
 if __name__ == "__main__":
     main()

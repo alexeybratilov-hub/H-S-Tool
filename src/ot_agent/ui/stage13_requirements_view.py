@@ -24,6 +24,21 @@ except Exception as _sync_exc:
     summary = None
     validate_sync = None
 
+try:
+    from ot_agent.stage13_drafts_db import (
+        create_draft_from_requirement,
+        get_connection as get_draft_connection,
+    )
+
+    DRAFT_MODULE_AVAILABLE = True
+    DRAFT_IMPORT_ERROR = ""
+except Exception as _draft_exc:
+    DRAFT_MODULE_AVAILABLE = False
+    DRAFT_IMPORT_ERROR = str(_draft_exc)
+
+    create_draft_from_requirement = None
+    get_draft_connection = None
+
 SOURCE_TYPE = "STAGE13_PRELIMINARY"
 ALLOWED_STATUSES = ("CONFIRMED", "REJECTED", "REQUIRES_VERIFICATION")
 BENIGN_ISSUE_PREFIXES = (
@@ -65,6 +80,14 @@ METRIC_PACKAGES = "\u0422\u0435\u0445\u043d\u0438\u0447\u0435\u0441\u043a\u0438\
 METRIC_ITEMS = "\u041f\u043e\u0437\u0438\u0446\u0438\u0438 \u043f\u0430\u043a\u0435\u0442\u043e\u0432"
 METRIC_ADD = "\u0411\u0443\u0434\u0435\u0442 \u0434\u043e\u0431\u0430\u0432\u043b\u0435\u043d\u043e \u043f\u043e\u0437\u0438\u0446\u0438\u0439"
 METRIC_REMOVE = "\u0411\u0443\u0434\u0435\u0442 \u0443\u0434\u0430\u043b\u0435\u043d\u043e \u043f\u043e\u0437\u0438\u0446\u0438\u0439"
+
+DRAFT_SECTION = "\u0414\u0435\u0439\u0441\u0442\u0432\u0438\u044f \u0441 \u0447\u0435\u0440\u043d\u043e\u0432\u0438\u043a\u043e\u043c"
+DRAFT_NOTE = "\u0421\u043e\u0437\u0434\u0430\u0451\u0442 \u043b\u043e\u043a\u0430\u043b\u044c\u043d\u044b\u0439 \u0442\u0435\u0445\u043d\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0447\u0435\u0440\u043d\u043e\u0432\u0438\u043a. \u0411\u0435\u0437 LLM, \u0431\u0435\u0437 DOCX, \u0431\u0435\u0437 \u044e\u0440\u0438\u0434\u0438\u0447\u0435\u0441\u043a\u043e\u0433\u043e \u0443\u0442\u0432\u0435\u0440\u0436\u0434\u0435\u043d\u0438\u044f."
+CREATE_DRAFT = "\u0421\u043e\u0437\u0434\u0430\u0442\u044c \u0442\u0435\u0445\u043d\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0447\u0435\u0440\u043d\u043e\u0432\u0438\u043a"
+DRAFT_CREATED = "\u0427\u0435\u0440\u043d\u043e\u0432\u0438\u043a \u0441\u043e\u0437\u0434\u0430\u043d"
+DRAFT_ERROR = "\u041e\u0448\u0438\u0431\u043a\u0430 \u0441\u043e\u0437\u0434\u0430\u043d\u0438\u044f \u0447\u0435\u0440\u043d\u043e\u0432\u0438\u043a\u0430"
+DRAFT_NOT_CONFIRMED = "\u0414\u043e\u0441\u0442\u0443\u043f\u043d\u043e \u0442\u043e\u043b\u044c\u043a\u043e \u0434\u043b\u044f \u0442\u0435\u0445\u043d\u0438\u0447\u0435\u0441\u043a\u0438 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d\u043d\u044b\u0445 \u0442\u0440\u0435\u0431\u043e\u0432\u0430\u043d\u0438\u0439."
+DRAFT_MODULE_UNAVAILABLE = "\u041c\u043e\u0434\u0443\u043b\u044c \u0447\u0435\u0440\u043d\u043e\u0432\u0438\u043a\u043e\u0432 \u042d\u0442\u0430\u043f\u0430 13 \u043d\u0435\u0434\u043e\u0441\u0442\u0443\u043f\u0435\u043d"
 
 
 def _safe_key(value: object) -> str:
@@ -245,6 +268,25 @@ def _perform_sync():
         conn.close()
 
 
+def _create_draft(requirement_id: str, company_id: str) -> dict:
+    if not DRAFT_MODULE_AVAILABLE:
+        raise RuntimeError(DRAFT_IMPORT_ERROR or DRAFT_MODULE_UNAVAILABLE)
+
+    conn = get_draft_connection()
+
+    try:
+        return create_draft_from_requirement(
+            conn,
+            company_id=company_id,
+            requirement_id=requirement_id,
+            author="streamlit_user",
+            comment="Created from Stage 13 technical confirmation.",
+            commit=True,
+        )
+    finally:
+        conn.close()
+
+
 def render_stage13_requirements():
     st.header(HEADER)
     st.caption(NOTE)
@@ -365,6 +407,8 @@ def render_stage13_requirements():
 
                 rid = ids[idx]
                 safe_rid = _safe_key(rid)
+                selected_row = rows.iloc[idx]
+                selected_req_status = str(selected_row.get("status", ""))
 
                 b1, b2, b3 = st.columns(3)
 
@@ -391,6 +435,28 @@ def render_stage13_requirements():
                         st.rerun()
                     except Exception as exc:
                         st.error(f"{SAVE_ERROR}: {exc}")
+
+                st.markdown(f"**{DRAFT_SECTION}**")
+                st.caption(DRAFT_NOTE)
+
+                if not DRAFT_MODULE_AVAILABLE:
+                    st.error(f"{DRAFT_MODULE_UNAVAILABLE}: {DRAFT_IMPORT_ERROR}")
+                else:
+                    if selected_req_status != "CONFIRMED":
+                        st.info(DRAFT_NOT_CONFIRMED)
+
+                    if st.button(
+                        CREATE_DRAFT,
+                        key=f"s13_create_draft_{safe_rid}",
+                        disabled=(selected_req_status != "CONFIRMED"),
+                    ):
+                        try:
+                            result = _create_draft(rid, company_id)
+                            st.success(DRAFT_CREATED)
+                            st.json(result)
+                            st.rerun()
+                        except Exception as exc:
+                            st.error(f"{DRAFT_ERROR}: {exc}")
 
     st.markdown("---")
     st.subheader(SYNC_HEADER)

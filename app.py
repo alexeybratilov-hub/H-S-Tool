@@ -8,6 +8,7 @@ if str(SRC_DIR) not in sys.path:
     sys.path.insert(0, str(SRC_DIR))
 
 import streamlit as st
+from ot_agent.ui.sout_ppe_risk import render as render_sout_ppe_risk
 from ot_agent.periodic_control_db import init_periodic_schema
 from ot_agent.drafts_db import init_draft_schema
 from ot_agent.package_planner_db import init_package_schema
@@ -96,5 +97,7 @@ elif page == "Черновики":
     drafts.render()
 elif page == "Контроль сроков":
     periodic_control.render()
+elif page == 'СОУТ / СИЗ / Риски':
+    render_sout_ppe_risk()
 else:
     settings.render()

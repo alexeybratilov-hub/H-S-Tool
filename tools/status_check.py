@@ -546,6 +546,63 @@ def _stage13_final_check():
         print("STAGE13_FINAL_CHECK=PASS")
 
 
+
+
+# STAGE14_ELECTRICAL_CHECK_BEGIN
+def _stage14_electrical_check():
+    import sys
+    from pathlib import Path
+
+    print("\n[ELECTRICAL]")
+
+    root = Path(__file__).resolve().parents[1]
+    src_dir = root / "src"
+    if str(src_dir) not in sys.path:
+        sys.path.insert(0, str(src_dir))
+
+    try:
+        from ot_agent.electrical_safety_db import get_connection, summary, validate_integrity
+    except Exception as exc:
+        print("ELECTRICAL_CHECK=ERROR")
+        print("ELECTRICAL_ERROR=import:" + str(exc))
+        return
+
+    conn = None
+    try:
+        conn = get_connection()
+        snap = summary(conn)
+
+        for table, value in sorted(snap.items()):
+            print(f"{table}={value}")
+
+        errors = validate_integrity(conn)
+
+        if errors:
+            print("ELECTRICAL_CHECK=FAIL")
+            for error in errors[:50]:
+                print("ELECTRICAL_ERROR=" + error)
+        else:
+            print("ELECTRICAL_CHECK=PASS")
+    except Exception as exc:
+        print("ELECTRICAL_CHECK=ERROR")
+        print("ELECTRICAL_ERROR=" + str(exc))
+    finally:
+        if conn is not None:
+            try:
+                conn.close()
+            except Exception:
+                pass
+
+
+if __name__ == "__main__":
+    try:
+        _stage14_electrical_check()
+    except Exception as exc:
+        print("\n[ELECTRICAL]")
+        print("ELECTRICAL_CHECK=ERROR")
+        print("ELECTRICAL_ERROR=" + str(exc))
+# STAGE14_ELECTRICAL_CHECK_END
+
 if __name__ == "__main__":
     try:
         _stage13_final_check()

@@ -259,3 +259,178 @@ def render():
         _render_view(company_id)
     else:
         _render_edit(company_id)
+
+# STAGE13_7_2_SUGGESTIONS_PATCH_BEGIN
+import pandas as pd
+import streamlit as st
+
+from ot_agent.ppe_sout_risk_db import DB_PATH, get_connection
+
+SUGGESTIONS = "\u041f\u0440\u0435\u0434\u043b\u043e\u0436\u0435\u043d\u0438\u044f \u043f\u0430\u043a\u0435\u0442\u0430"
+SUGGESTION_NOTE = "\u041f\u0440\u0435\u0434\u043b\u043e\u0436\u0435\u043d\u0438\u044f \u0442\u0435\u0445\u043d\u0438\u0447\u0435\u0441\u043a\u0438\u0435 \u0438 \u043f\u0440\u0435\u0434\u0432\u0430\u0440\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0435. \u041d\u0435 \u044f\u0432\u043b\u044f\u044e\u0442\u0441\u044f \u044e\u0440\u0438\u0434\u0438\u0447\u0435\u0441\u043a\u0438 \u043e\u0431\u044f\u0437\u0430\u0442\u0435\u043b\u044c\u043d\u044b\u043c\u0438."
+NO_SUGGESTIONS = "\u041d\u0435\u0442 \u043f\u0440\u0435\u0434\u043b\u043e\u0436\u0435\u043d\u0438\u0439"
+TABLE_MISSING = "\u0422\u0430\u0431\u043b\u0438\u0446\u0430 \u043f\u0440\u0435\u0434\u043b\u043e\u0436\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u0430"
+
+if "NO_DATA" not in globals():
+    NO_DATA = "\u041d\u0435\u0442 \u0434\u0430\u043d\u043d\u044b\u0445"
+
+if "SECTION" not in globals():
+    SECTION = "\u0420\u0430\u0437\u0434\u0435\u043b"
+
+if "OVERVIEW" not in globals():
+    OVERVIEW = "\u041e\u0431\u0437\u043e\u0440"
+
+if "SOUT" not in globals():
+    SOUT = "\u0421\u041e\u0423\u0422"
+
+if "PPE" not in globals():
+    PPE = "\u0421\u0418\u0417"
+
+if "RISK" not in globals():
+    RISK = "\u0420\u0438\u0441\u043a\u0438"
+
+if "SOURCE_KIND" not in globals():
+    SOURCE_KIND = "\u0418\u0441\u0442\u043e\u0447\u043d\u0438\u043a"
+
+if "ALL_LABEL" not in globals():
+    ALL_LABEL = "\u0412\u0441\u0435"
+
+if "TABLES_OVERVIEW" not in globals():
+    TABLES_OVERVIEW = (
+        "harmful_factors",
+        "sout_campaigns",
+        "sout_workplaces",
+        "sout_results",
+        "ppe_items",
+        "ppe_norms",
+        "employee_ppe_cards",
+        "ppe_issue_records",
+        "ppe_return_records",
+        "risk_register",
+    )
+
+if "_df" not in globals():
+    def _df(sql, params=()):
+        conn = get_connection(DB_PATH)
+        try:
+            if params:
+                cur = conn.execute(sql, params)
+            else:
+                cur = conn.execute(sql)
+            cols = [d[0] for d in cur.description]
+            rows = [tuple(r) for r in cur.fetchall()]
+            return pd.DataFrame(rows, columns=cols)
+        finally:
+            conn.close()
+
+if "_show" not in globals():
+    def _show(title, df):
+        st.markdown(f"**{title}**")
+        if df.empty:
+            st.info(NO_DATA)
+        else:
+            st.dataframe(df)
+
+def _render_suggestions(company_id):
+    st.caption(SUGGESTION_NOTE)
+
+    try:
+        df = _df(
+            """
+            SELECT *
+            FROM stage13_package_suggestions
+            WHERE company_id = ?
+            ORDER BY source_kind, proposed_document_code
+            """,
+            (company_id,),
+        )
+    except Exception:
+        st.warning(TABLE_MISSING)
+        return
+
+    if df.empty:
+        st.info(NO_SUGGESTIONS)
+        return
+
+    options = [ALL_LABEL] + sorted(
+        {str(v) for v in df["source_kind"].dropna().tolist() if str(v)}
+    )
+
+    selected = st.selectbox(
+        SOURCE_KIND,
+        options,
+        key=f"s13_sugg_kind_{company_id}",
+    )
+
+    if selected != ALL_LABEL:
+        df = df[df["source_kind"].astype(str) == selected]
+
+    if df.empty:
+        st.info(NO_SUGGESTIONS)
+    else:
+        st.dataframe(df)
+
+def _render_view(company_id):
+    section = st.selectbox(
+        SECTION,
+        [OVERVIEW, SOUT, PPE, RISK, SUGGESTIONS],
+        key="sout_ppe_risk_section",
+    )
+
+    if section == OVERVIEW:
+        rows = []
+        for table in TABLES_OVERVIEW:
+            rows.append({"table": table, "rows": len(_df(f"SELECT * FROM {table}"))})
+        st.dataframe(pd.DataFrame(rows))
+
+    elif section == SOUT:
+        _show(
+            "sout_campaigns",
+            _df("SELECT * FROM sout_campaigns WHERE company_id=?", (company_id,)),
+        )
+        _show(
+            "sout_workplaces",
+            _df("SELECT * FROM sout_workplaces WHERE company_id=?", (company_id,)),
+        )
+        _show(
+            "sout_results",
+            _df(
+                """
+                SELECT sr.*
+                FROM sout_results sr
+                JOIN sout_workplaces sw ON sr.workplace_id = sw.workplace_id
+                WHERE sw.company_id = ?
+                ORDER BY sr.rowid
+                """,
+                (company_id,),
+            ),
+        )
+
+    elif section == PPE:
+        _show("ppe_items", _df("SELECT * FROM ppe_items"))
+        _show(
+            "ppe_norms",
+            _df("SELECT * FROM ppe_norms WHERE company_id=?", (company_id,)),
+        )
+        _show(
+            "employee_ppe_cards",
+            _df("SELECT * FROM employee_ppe_cards WHERE company_id=?", (company_id,)),
+        )
+        _show(
+            "ppe_issue_records",
+            _df("SELECT * FROM ppe_issue_records WHERE company_id=?", (company_id,)),
+        )
+        _show(
+            "ppe_return_records",
+            _df("SELECT * FROM ppe_return_records WHERE company_id=?", (company_id,)),
+        )
+
+    elif section == RISK:
+        _show(
+            "risk_register",
+            _df("SELECT * FROM risk_register WHERE company_id=?", (company_id,)),
+        )
+
+    elif section == SUGGESTIONS:
+        _render_suggestions(company_id)
+# STAGE13_7_2_SUGGESTIONS_PATCH_END

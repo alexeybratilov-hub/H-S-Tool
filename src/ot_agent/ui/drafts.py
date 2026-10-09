@@ -222,3 +222,104 @@ def render_drafts() -> None:
 
 
 render = render_drafts
+
+# STAGE13_DRAFT_UI_FIX_BEGIN
+def _s13_field(row, key, default=""):
+    try:
+        if hasattr(row, "get"):
+            value = row.get(key, default)
+        else:
+            keys = list(row.keys())
+            value = row[key] if key in keys else default
+    except Exception:
+        value = default
+
+    return default if value is None else value
+
+
+def _s13_draft_count(conn, company_id):
+    if not company_id:
+        return 0
+
+    try:
+        return int(
+            conn.execute(
+                "SELECT COUNT(*) FROM drafts WHERE company_id = ?",
+                (company_id,),
+            ).fetchone()[0]
+            or 0
+        )
+    except Exception:
+        return 0
+
+
+_orig_list_companies_s13 = globals().get("list_companies")
+
+
+def list_companies(conn):
+    if not callable(_orig_list_companies_s13):
+        return []
+
+    rows = list(_orig_list_companies_s13(conn))
+    ranked = []
+
+    for row in rows:
+        company_id = _s13_field(row, "company_id", "")
+        ranked.append((_s13_draft_count(conn, company_id), row))
+
+    ranked.sort(
+        key=lambda item: (
+            -item[0],
+            str(
+                _s13_field(
+                    item[1],
+                    "display_name",
+                    _s13_field(item[1], "company_id", ""),
+                )
+            ),
+        )
+    )
+
+    return [row for _count, row in ranked]
+
+
+_orig_render_drafts_s13 = globals().get("render_drafts")
+
+
+if callable(_orig_render_drafts_s13):
+    def render_drafts():
+        try:
+            import streamlit as st
+            from ot_agent.drafts_db import get_connection as _s13_get_connection
+
+            conn = _s13_get_connection()
+
+            try:
+                rows = list_companies(conn)
+                counts = []
+
+                for row in rows:
+                    company_id = _s13_field(row, "company_id", "")
+                    display_name = _s13_field(row, "display_name", company_id)
+                    count = _s13_draft_count(conn, company_id)
+                    counts.append(
+                        {
+                            "company_id": company_id,
+                            "display_name": display_name,
+                            "drafts": count,
+                        }
+                    )
+            finally:
+                conn.close()
+
+            if counts:
+                st.caption(
+                    "Stage 13 UI fix: companies with drafts are sorted first."
+                )
+        except Exception:
+            pass
+
+        _orig_render_drafts_s13()
+
+    render = render_drafts
+# STAGE13_DRAFT_UI_FIX_END

@@ -2,19 +2,21 @@
 Company Status Enumeration
 """
 
-from enum import Enum, auto
+from enum import Enum
 
 
 class CompanyStatus(Enum):
     """
     Status values specific to companies.
+    
+    Matches the status values used in the database schema.
     """
-    ACTIVE = auto()           # Company is active
-    INACTIVE = auto()         # Company is inactive
-    ARCHIVED = auto()         # Company is archived
-    PLANNED = auto()          # Company is planned
-    LIQUIDATED = auto()       # Company is liquidated
-    REORGANIZED = auto()      # Company is reorganized
+    ACTIVE = "ACTIVE"           # Company is active
+    INACTIVE = "INACTIVE"         # Company is inactive
+    ARCHIVED = "ARCHIVED"         # Company is archived
+    PLANNED = "PLANNED"          # Company is planned
+    LIQUIDATED = "LIQUIDATED"       # Company is liquidated
+    REORGANIZED = "REORGANIZED"      # Company is reorganized
 
     def is_active(self) -> bool:
         """Check if company is active."""

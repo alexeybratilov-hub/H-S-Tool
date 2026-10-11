@@ -6,7 +6,7 @@ According to TZ: "Never auto-verify legal status - all documents must remain
 inREQUIRES_VERIFICATION until human approval"
 """
 
-from enum import Enum, auto
+from enum import Enum
 
 
 class VerificationStatus(Enum):
@@ -18,9 +18,9 @@ class VerificationStatus(Enum):
     VERIFIED:         Entity has been verified by qualified specialist.
     REJECTED:         Entity has been rejected (with reason).
     """
-    REQUIRES_VERIFICATION = auto()
-    VERIFIED = auto()
-    REJECTED = auto()
+    REQUIRES_VERIFICATION = "REQUIRES_VERIFICATION"
+    VERIFIED = "VERIFIED"
+    REJECTED = "REJECTED"
 
     @classmethod
     def default(cls) -> "VerificationStatus":

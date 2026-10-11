@@ -24,7 +24,7 @@ __version__ = "0.1.0"
 __author__ = "H-S-Tool Team"
 __license__ = "Proprietary"
 
-# Re-export common types
+# Re-export domain layer
 from hs_tool.domain.entities import (
     Company,
     Employee,
@@ -40,23 +40,60 @@ from hs_tool.domain.value_objects import (
 from hs_tool.domain.enums import (
     VerificationStatus,
     EntityStatus,
+    CompanyStatus,
+    EmployeeStatus,
+)
+from hs_tool.domain.exceptions import (
+    DomainError,
+    ValidationError,
+    NotFoundError,
 )
 
+# Re-export application layer
+from hs_tool.application.services import CompanyService
+from hs_tool.application.dto import (
+    CompanyCreateDTO,
+    CompanyReadDTO,
+    CompanyUpdateDTO,
+)
+
+# Re-export infrastructure layer
+from hs_tool.infrastructure.database import (
+    DatabaseConnection,
+    get_connection,
+    DatabaseConnectionError,
+)
+from hs_tool.infrastructure.database.repositories import CompanyRepository
+
 __all__ = [
+    # Version info
     "__version__",
     "__author__",
     "__license__",
-    # Entities
+    # Domain layer
     "Company",
     "Employee",
     "Department",
     "Position",
-    # Value Objects
     "CompanyId",
     "EmployeeId",
     "DepartmentId",
     "PositionId",
-    # Enums
     "VerificationStatus",
     "EntityStatus",
+    "CompanyStatus",
+    "EmployeeStatus",
+    "DomainError",
+    "ValidationError",
+    "NotFoundError",
+    # Application layer
+    "CompanyService",
+    "CompanyCreateDTO",
+    "CompanyReadDTO",
+    "CompanyUpdateDTO",
+    # Infrastructure layer
+    "DatabaseConnection",
+    "get_connection",
+    "DatabaseConnectionError",
+    "CompanyRepository",
 ]

@@ -2,19 +2,21 @@
 Employee Status Enumeration
 """
 
-from enum import Enum, auto
+from enum import Enum
 
 
 class EmployeeStatus(Enum):
     """
     Status values specific to employees.
+    
+    Matches the status values used in the database schema.
     """
-    ACTIVE = auto()           # Employee is active
-    INACTIVE = auto()         # Employee is inactive
-    ON_LEAVE = auto()         # Employee is on leave
-    TERMINATED = auto()       # Employee is terminated
-    PLANNED = auto()          # Employee is planned (not yet hired)
-    RETIRED = auto()          # Employee is retired
+    ACTIVE = "ACTIVE"           # Employee is active
+    INACTIVE = "INACTIVE"         # Employee is inactive
+    ON_LEAVE = "ON_LEAVE"         # Employee is on leave
+    TERMINATED = "TERMINATED"       # Employee is terminated
+    PLANNED = "PLANNED"          # Employee is planned (not yet hired)
+    RETIRED = "RETIRED"          # Employee is retired
 
     def is_active(self) -> bool:
         """Check if employee is active."""

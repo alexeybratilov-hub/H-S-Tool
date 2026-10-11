@@ -50,7 +50,12 @@ from hs_tool.domain.exceptions import (
 )
 
 # Re-export application layer
-from hs_tool.application.services import CompanyService
+from hs_tool.application.services import (
+    CompanyService,
+    EmployeeService,
+    DepartmentService,
+    PositionService,
+)
 from hs_tool.application.dto import (
     CompanyCreateDTO,
     CompanyReadDTO,
@@ -63,7 +68,12 @@ from hs_tool.infrastructure.database import (
     get_connection,
     DatabaseConnectionError,
 )
-from hs_tool.infrastructure.database.repositories import CompanyRepository
+from hs_tool.infrastructure.database.repositories import (
+    CompanyRepository,
+    EmployeeRepository,
+    DepartmentRepository,
+    PositionRepository,
+)
 
 __all__ = [
     # Version info
@@ -88,6 +98,9 @@ __all__ = [
     "NotFoundError",
     # Application layer
     "CompanyService",
+    "EmployeeService",
+    "DepartmentService",
+    "PositionService",
     "CompanyCreateDTO",
     "CompanyReadDTO",
     "CompanyUpdateDTO",
@@ -96,4 +109,7 @@ __all__ = [
     "get_connection",
     "DatabaseConnectionError",
     "CompanyRepository",
+    "EmployeeRepository",
+    "DepartmentRepository",
+    "PositionRepository",
 ]

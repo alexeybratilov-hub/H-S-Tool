@@ -1,47 +1,5 @@
-﻿# Python
 __pycache__/
-*.py[cod]
-*.class
-*.so
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-pip-wheel-metadata/
-share/python-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
-
-# Virtual Environment
-.venv/
-env/
-ENV/
-
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# OS Files
-.DS_Store
-Thumbs.db
-
-# Project Specific - IMPORTANT!
-# Exclude database to avoid committing sensitive or large binary data
-00_SYS/ot_local_agent.sqlite
-00_SYS/backups/*.sqlite
-
-# Temporary scripts often generated during development
-tools/_*.py
+*.pyc
+.env
+.env.local
+*.env.*

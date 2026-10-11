@@ -2,7 +2,7 @@ import streamlit as st
 
 
 def render() -> None:
-    st.subheader("Dashboard")
+    st.subheader("\u041f\u0430\u043d\u0435\u043b\u044c \u043e\u0431\u0437\u043e\u0440\u0430")
 
     st.markdown(
         """

@@ -47,7 +47,7 @@ def _snippet(text: str, max_len: int = 180) -> str:
 
 
 def render() -> None:
-    st.subheader("Normative Base")
+    st.subheader("\u041d\u043e\u0440\u043c\u0430\u0442\u0438\u0432\u043d\u0430\u044f \u0431\u0430\u0437\u0430")
 
     st.markdown(get_security_notice())
 

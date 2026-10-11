@@ -48,7 +48,7 @@ def _rows_to_dataframe(
 
 
 def render() -> None:
-    st.subheader("Norm Applicability")
+    st.subheader("\u041f\u0440\u0438\u043c\u0435\u043d\u0438\u043c\u043e\u0441\u0442\u044c \u043d\u043e\u0440\u043c\u0430\u0442\u0438\u0432\u043d\u044b\u0445 \u0438\u0441\u0442\u043e\u0447\u043d\u0438\u043a\u043e\u0432")
 
     st.markdown(get_security_notice())
 
@@ -73,13 +73,13 @@ def render() -> None:
 
     col1, col2, col3, col4, col5 = st.columns(5)
 
-    col1.metric("Total", counts.get("total", 0))
-    col2.metric("Confirmed", counts.get("CONFIRMED", 0))
-    col3.metric("Suggested", counts.get("SUGGESTED", 0))
-    col4.metric("Rejected", counts.get("REJECTED", 0))
-    col5.metric("Requires verification", counts.get("REQUIRES_VERIFICATION", 0))
+    col1.metric("\u0412\u0441\u0435\u0433\u043e", counts.get("total", 0))
+    col2.metric("\u041f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0435\u043d\u043e", counts.get("CONFIRMED", 0))
+    col3.metric("\u041f\u0440\u0435\u0434\u043b\u043e\u0436\u0435\u043d\u043e", counts.get("SUGGESTED", 0))
+    col4.metric("\u041e\u0442\u043a\u043b\u043e\u043d\u0435\u043d\u043e", counts.get("REJECTED", 0))
+    col5.metric("\u0422\u0440\u0435\u0431\u0443\u0435\u0442 \u043f\u0440\u043e\u0432\u0435\u0440\u043a\u0438", counts.get("REQUIRES_VERIFICATION", 0))
 
-    st.caption(f"Company: {company_id}")
+    st.caption(f"\u041a\u043e\u043c\u043f\u0430\u043d\u0438\u044f: {company_id}")
 
     rows = list_sources_with_applicability(company_id)
 
@@ -101,7 +101,7 @@ def render() -> None:
     )
 
     st.markdown("---")
-    st.markdown("### Change applicability")
+    st.markdown("### \u0418\u0437\u043c\u0435\u043d\u0438\u0442\u044c \u043f\u0440\u0438\u043c\u0435\u043d\u0438\u043c\u043e\u0441\u0442\u044c")
 
     sources = list_sources()
 
@@ -123,7 +123,7 @@ def render() -> None:
     }
 
     selected_source_id = st.selectbox(
-        "Source",
+        "\u0418\u0441\u0442\u043e\u0447\u043d\u0438\u043a",
         source_options,
         format_func=lambda source_id: labels.get(source_id, source_id),
         key="applicability_source_selector",
@@ -144,25 +144,25 @@ def render() -> None:
     status_index = STATUS_ORDER.index(current_status)
 
     applicability_status = st.selectbox(
-        "Applicability status",
+        "\u0421\u0442\u0430\u0442\u0443\u0441 \u043f\u0440\u0438\u043c\u0435\u043d\u0438\u043c\u043e\u0441\u0442\u0438",
         STATUS_ORDER,
         index=status_index,
         key="applicability_status_select",
     )
 
     reason = st.text_area(
-        "Reason",
+        "\u041f\u0440\u0438\u0447\u0438\u043d\u0430",
         value=str(current.get("reason") or ""),
         key="applicability_reason",
     )
 
     confirmed_by = st.text_input(
-        "Confirmed by",
-        value=str(current.get("confirmed_by") or "TEST_USER"),
+        "\u041f\u043e\u0434\u0442\u0432\u0435\u0440\u0434\u0438\u043b",
+        value=str(current.get("confirmed_by") or ""),
         key="applicability_confirmed_by",
     )
 
-    if st.button("Save applicability", key="save_applicability_button"):
+    if st.button("\u0421\u043e\u0445\u0440\u0430\u043d\u0438\u0442\u044c \u043f\u0440\u0438\u043c\u0435\u043d\u0438\u043c\u043e\u0441\u0442\u044c", key="save_applicability_button"):
         try:
             saved = upsert_applicability(
                 {
@@ -176,7 +176,7 @@ def render() -> None:
             )
 
             st.success(
-                "Saved: "
+                "\u0421\u043e\u0445\u0440\u0430\u043d\u0435\u043d\u043e: "
                 f"{saved['company_id']} | "
                 f"{saved['source_id']} | "
                 f"{saved['applicability_status']}"
@@ -185,4 +185,4 @@ def render() -> None:
             st.rerun()
 
         except Exception as exc:
-            st.error(f"Save failed: {exc}")
+            st.error(f"\u041e\u0448\u0438\u0431\u043a\u0430 \u0441\u043e\u0445\u0440\u0430\u043d\u0435\u043d\u0438\u044f: {exc}")

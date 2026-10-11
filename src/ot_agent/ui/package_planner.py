@@ -255,5 +255,5 @@ if callable(_orig_render_stage13):
             render_stage13_requirements()
         except Exception as exc:
             import streamlit as st
-            st.error("Stage 13 requirements view error: " + str(exc))
+            st.error("\u041e\u0448\u0438\u0431\u043a\u0430 \u043e\u0442\u043e\u0431\u0440\u0430\u0436\u0435\u043d\u0438\u044f \u0442\u0440\u0435\u0431\u043e\u0432\u0430\u043d\u0438\u0439 \u042d\u0442\u0430\u043f\u0430 13: " + str(exc))
 # STAGE13_REQUIREMENTS_UI_PATCH_END

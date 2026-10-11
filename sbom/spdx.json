@@ -1,0 +1,3144 @@
+{
+  "spdxVersion": "SPDX-2.3",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "H-S-Tool",
+  "documentNamespace": "https://hstool.example/H-S-Tool/35a95661-0cd1-4e44-a5b9-09dcdd62751e",
+  "creationInfo": {
+    "created": "2026-10-11T14:11:38Z",
+    "creators": [
+      "Tool: sbom_generate.py-1.0.0"
+    ]
+  },
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-Project",
+      "name": "H-S-Tool",
+      "versionInfo": "1.0.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "h-s-tool/1.0.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-0",
+      "name": "agent-client-protocol",
+      "versionInfo": "0.9.0",
+      "downloadLocation": "https://pypi.org/packages/agent-client-protocol/0.9.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "agent-client-protocol/0.9.0"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-1",
+      "name": "altair",
+      "versionInfo": "6.3.0",
+      "downloadLocation": "https://pypi.org/packages/altair/6.3.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Copyright (c) 2015-2025, Vega-Altair Developers",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "altair/6.3.0"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-2",
+      "name": "annotated-types",
+      "versionInfo": "0.8.0",
+      "downloadLocation": "https://pypi.org/packages/annotated-types/0.8.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "annotated-types/0.8.0"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-3",
+      "name": "anyio",
+      "versionInfo": "4.15.1",
+      "downloadLocation": "https://pypi.org/packages/anyio/4.15.1",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "anyio/4.15.1"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-4",
+      "name": "asttokens",
+      "versionInfo": "3.0.2",
+      "downloadLocation": "https://pypi.org/packages/asttokens/3.0.2",
+      "filesAnalyzed": false,
+      "licenseConcluded": "Apache-2.0",
+      "licenseDeclared": "Apache 2.0",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "asttokens/3.0.2"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: allowed"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-5",
+      "name": "attrs",
+      "versionInfo": "26.1.0",
+      "downloadLocation": "https://pypi.org/packages/attrs/26.1.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "attrs/26.1.0"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-6",
+      "name": "beautifulsoup4",
+      "versionInfo": "4.15.0",
+      "downloadLocation": "https://pypi.org/packages/beautifulsoup4/4.15.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT License",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "beautifulsoup4/4.15.0"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-7",
+      "name": "cachetools",
+      "versionInfo": "7.2.1",
+      "downloadLocation": "https://pypi.org/packages/cachetools/7.2.1",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "cachetools/7.2.1"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-8",
+      "name": "certifi",
+      "versionInfo": "2026.7.22",
+      "downloadLocation": "https://pypi.org/packages/certifi/2026.7.22",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MPL-2.0",
+      "licenseDeclared": "MPL-2.0",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "certifi/2026.7.22"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: requires_review"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-9",
+      "name": "cffi",
+      "versionInfo": "2.1.1",
+      "downloadLocation": "https://pypi.org/packages/cffi/2.1.1",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "cffi/2.1.1"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-10",
+      "name": "charset-normalizer",
+      "versionInfo": "3.5.2",
+      "downloadLocation": "https://pypi.org/packages/charset-normalizer/3.5.2",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "charset-normalizer/3.5.2"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: allowed"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-11",
+      "name": "click",
+      "versionInfo": "8.5.0",
+      "downloadLocation": "https://pypi.org/packages/click/8.5.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "click/8.5.0"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-12",
+      "name": "comm",
+      "versionInfo": "0.2.3",
+      "downloadLocation": "https://pypi.org/packages/comm/0.2.3",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "BSD 3-Clause License",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "comm/0.2.3"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-13",
+      "name": "cryptography",
+      "versionInfo": "50.0.2",
+      "downloadLocation": "https://pypi.org/packages/cryptography/50.0.2",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "cryptography/50.0.2"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-14",
+      "name": "debugpy",
+      "versionInfo": "1.8.22",
+      "downloadLocation": "https://pypi.org/packages/debugpy/1.8.22",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "debugpy/1.8.22"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: allowed"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-15",
+      "name": "eval_type_backport",
+      "versionInfo": "0.4.0",
+      "downloadLocation": "https://pypi.org/packages/eval_type_backport/0.4.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "eval_type_backport/0.4.0"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: allowed"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-16",
+      "name": "executing",
+      "versionInfo": "2.2.1",
+      "downloadLocation": "https://pypi.org/packages/executing/2.2.1",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "executing/2.2.1"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: allowed"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-17",
+      "name": "gitdb",
+      "versionInfo": "4.0.12",
+      "downloadLocation": "https://pypi.org/packages/gitdb/4.0.12",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "BSD License",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "gitdb/4.0.12"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-18",
+      "name": "gitpython",
+      "versionInfo": "3.2.0",
+      "downloadLocation": "https://pypi.org/packages/gitpython/3.2.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "BSD-3-Clause",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "gitpython/3.2.0"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: allowed"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-19",
+      "name": "giturlparse",
+      "versionInfo": "0.15.0",
+      "downloadLocation": "https://pypi.org/packages/giturlparse/0.15.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache v2",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "giturlparse/0.15.0"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-20",
+      "name": "google-auth",
+      "versionInfo": "2.60.0",
+      "downloadLocation": "https://pypi.org/packages/google-auth/2.60.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "Apache-2.0",
+      "licenseDeclared": "Apache 2.0",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "google-auth/2.60.0"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: allowed"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-21",
+      "name": "googleapis-common-protos",
+      "versionInfo": "1.75.5",
+      "downloadLocation": "https://pypi.org/packages/googleapis-common-protos/1.75.5",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "googleapis-common-protos/1.75.5"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-22",
+      "name": "h11",
+      "versionInfo": "0.16.0",
+      "downloadLocation": "https://pypi.org/packages/h11/0.16.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "h11/0.16.0"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: allowed"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-23",
+      "name": "httpcore",
+      "versionInfo": "1.0.9",
+      "downloadLocation": "https://pypi.org/packages/httpcore/1.0.9",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "httpcore/1.0.9"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-24",
+      "name": "httpcore2",
+      "versionInfo": "2.13.1",
+      "downloadLocation": "https://pypi.org/packages/httpcore2/2.13.1",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "httpcore2/2.13.1"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-25",
+      "name": "httptools",
+      "versionInfo": "0.9.0",
+      "downloadLocation": "https://pypi.org/packages/httptools/0.9.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "httptools/0.9.0"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-26",
+      "name": "httpx",
+      "versionInfo": "0.28.1",
+      "downloadLocation": "https://pypi.org/packages/httpx/0.28.1",
+      "filesAnalyzed": false,
+      "licenseConcluded": "BSD-3-Clause",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "httpx/0.28.1"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: allowed"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-27",
+      "name": "httpx2",
+      "versionInfo": "2.13.1",
+      "downloadLocation": "https://pypi.org/packages/httpx2/2.13.1",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "httpx2/2.13.1"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-28",
+      "name": "idna",
+      "versionInfo": "3.20",
+      "downloadLocation": "https://pypi.org/packages/idna/3.20",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "idna/3.20"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-29",
+      "name": "ipykernel",
+      "versionInfo": "7.3.0",
+      "downloadLocation": "https://pypi.org/packages/ipykernel/7.3.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "ipykernel/7.3.0"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-30",
+      "name": "ipython",
+      "versionInfo": "9.17.1",
+      "downloadLocation": "https://pypi.org/packages/ipython/9.17.1",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "ipython/9.17.1"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-31",
+      "name": "ipython_pygments_lexers",
+      "versionInfo": "1.1.1",
+      "downloadLocation": "https://pypi.org/packages/ipython_pygments_lexers/1.1.1",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "ipython_pygments_lexers/1.1.1"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-32",
+      "name": "itsdangerous",
+      "versionInfo": "2.2.0",
+      "downloadLocation": "https://pypi.org/packages/itsdangerous/2.2.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "itsdangerous/2.2.0"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-33",
+      "name": "jaraco.classes",
+      "versionInfo": "3.4.0",
+      "downloadLocation": "https://pypi.org/packages/jaraco.classes/3.4.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "jaraco.classes/3.4.0"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-34",
+      "name": "jaraco.context",
+      "versionInfo": "6.1.2",
+      "downloadLocation": "https://pypi.org/packages/jaraco.context/6.1.2",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "jaraco.context/6.1.2"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-35",
+      "name": "jaraco.functools",
+      "versionInfo": "4.6.0",
+      "downloadLocation": "https://pypi.org/packages/jaraco.functools/4.6.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "jaraco.functools/4.6.0"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-36",
+      "name": "jedi",
+      "versionInfo": "0.20.0",
+      "downloadLocation": "https://pypi.org/packages/jedi/0.20.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "jedi/0.20.0"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: allowed"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-37",
+      "name": "jeepney",
+      "versionInfo": "0.9.0",
+      "downloadLocation": "https://pypi.org/packages/jeepney/0.9.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "jeepney/0.9.0"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-38",
+      "name": "jinja2",
+      "versionInfo": "3.1.6",
+      "downloadLocation": "https://pypi.org/packages/jinja2/3.1.6",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "jinja2/3.1.6"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-39",
+      "name": "jsonpatch",
+      "versionInfo": "1.33",
+      "downloadLocation": "https://pypi.org/packages/jsonpatch/1.33",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Modified BSD License",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "jsonpatch/1.33"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-40",
+      "name": "jsonpath-python",
+      "versionInfo": "1.1.6",
+      "downloadLocation": "https://pypi.org/packages/jsonpath-python/1.1.6",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT License",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "jsonpath-python/1.1.6"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-41",
+      "name": "jsonpointer",
+      "versionInfo": "3.1.1",
+      "downloadLocation": "https://pypi.org/packages/jsonpointer/3.1.1",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Modified BSD License",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "jsonpointer/3.1.1"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-42",
+      "name": "jsonschema",
+      "versionInfo": "4.26.0",
+      "downloadLocation": "https://pypi.org/packages/jsonschema/4.26.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "jsonschema/4.26.0"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-43",
+      "name": "jsonschema-specifications",
+      "versionInfo": "2025.9.1",
+      "downloadLocation": "https://pypi.org/packages/jsonschema-specifications/2025.9.1",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "jsonschema-specifications/2025.9.1"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-44",
+      "name": "jupyter_client",
+      "versionInfo": "8.10.0",
+      "downloadLocation": "https://pypi.org/packages/jupyter_client/8.10.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "BSD 3-Clause License",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "jupyter_client/8.10.0"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-45",
+      "name": "jupyter_core",
+      "versionInfo": "5.9.1",
+      "downloadLocation": "https://pypi.org/packages/jupyter_core/5.9.1",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "jupyter_core/5.9.1"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-46",
+      "name": "keyring",
+      "versionInfo": "25.7.0",
+      "downloadLocation": "https://pypi.org/packages/keyring/25.7.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "keyring/25.7.0"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-47",
+      "name": "linkify-it-py",
+      "versionInfo": "2.2.0",
+      "downloadLocation": "https://pypi.org/packages/linkify-it-py/2.2.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "linkify-it-py/2.2.0"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: allowed"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-48",
+      "name": "markdown-it-py",
+      "versionInfo": "4.2.0",
+      "downloadLocation": "https://pypi.org/packages/markdown-it-py/4.2.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "markdown-it-py/4.2.0"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-49",
+      "name": "markdownify",
+      "versionInfo": "1.2.3",
+      "downloadLocation": "https://pypi.org/packages/markdownify/1.2.3",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "markdownify/1.2.3"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-50",
+      "name": "markupsafe",
+      "versionInfo": "3.0.4",
+      "downloadLocation": "https://pypi.org/packages/markupsafe/3.0.4",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "markupsafe/3.0.4"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-51",
+      "name": "matplotlib-inline",
+      "versionInfo": "0.2.2",
+      "downloadLocation": "https://pypi.org/packages/matplotlib-inline/0.2.2",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "matplotlib-inline/0.2.2"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-52",
+      "name": "mcp",
+      "versionInfo": "2.3.0",
+      "downloadLocation": "https://pypi.org/packages/mcp/2.3.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "mcp/2.3.0"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: allowed"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-53",
+      "name": "mcp-types",
+      "versionInfo": "2.3.0",
+      "downloadLocation": "https://pypi.org/packages/mcp-types/2.3.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "mcp-types/2.3.0"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: allowed"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-54",
+      "name": "mdit-py-plugins",
+      "versionInfo": "0.6.1",
+      "downloadLocation": "https://pypi.org/packages/mdit-py-plugins/0.6.1",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "mdit-py-plugins/0.6.1"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-55",
+      "name": "mdurl",
+      "versionInfo": "0.1.2",
+      "downloadLocation": "https://pypi.org/packages/mdurl/0.1.2",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "mdurl/0.1.2"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-56",
+      "name": "mistral-vibe",
+      "versionInfo": "2.9.4",
+      "downloadLocation": "https://pypi.org/packages/mistral-vibe/2.9.4",
+      "filesAnalyzed": false,
+      "licenseConcluded": "Apache-2.0",
+      "licenseDeclared": "Apache-2.0",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "mistral-vibe/2.9.4"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: allowed"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-57",
+      "name": "mistralai",
+      "versionInfo": "3.1.0",
+      "downloadLocation": "https://pypi.org/packages/mistralai/3.1.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "mistralai/3.1.0"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-58",
+      "name": "mistralai-vibe-sdk",
+      "versionInfo": "0.14.2",
+      "downloadLocation": "https://pypi.org/packages/mistralai-vibe-sdk/0.14.2",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "mistralai-vibe-sdk/0.14.2"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-59",
+      "name": "more-itertools",
+      "versionInfo": "11.1.0",
+      "downloadLocation": "https://pypi.org/packages/more-itertools/11.1.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "more-itertools/11.1.0"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-60",
+      "name": "narwhals",
+      "versionInfo": "2.27.1",
+      "downloadLocation": "https://pypi.org/packages/narwhals/2.27.1",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "narwhals/2.27.1"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-61",
+      "name": "nest-asyncio",
+      "versionInfo": "1.6.0",
+      "downloadLocation": "https://pypi.org/packages/nest-asyncio/1.6.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "BSD",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "nest-asyncio/1.6.0"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-62",
+      "name": "nest-asyncio2",
+      "versionInfo": "1.7.3",
+      "downloadLocation": "https://pypi.org/packages/nest-asyncio2/1.7.3",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "BSD",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "nest-asyncio2/1.7.3"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-63",
+      "name": "numpy",
+      "versionInfo": "2.5.4",
+      "downloadLocation": "https://pypi.org/packages/numpy/2.5.4",
+      "filesAnalyzed": false,
+      "licenseConcluded": "BSD-3-Clause",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "numpy/2.5.4"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: allowed"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-64",
+      "name": "opentelemetry-api",
+      "versionInfo": "1.45.1",
+      "downloadLocation": "https://pypi.org/packages/opentelemetry-api/1.45.1",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "opentelemetry-api/1.45.1"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-65",
+      "name": "opentelemetry-exporter-http-transport",
+      "versionInfo": "0.66b1",
+      "downloadLocation": "https://pypi.org/packages/opentelemetry-exporter-http-transport/0.66b1",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "opentelemetry-exporter-http-transport/0.66b1"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-66",
+      "name": "opentelemetry-exporter-otlp-common",
+      "versionInfo": "0.66b1",
+      "downloadLocation": "https://pypi.org/packages/opentelemetry-exporter-otlp-common/0.66b1",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "opentelemetry-exporter-otlp-common/0.66b1"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-67",
+      "name": "opentelemetry-exporter-otlp-proto-common",
+      "versionInfo": "1.45.1",
+      "downloadLocation": "https://pypi.org/packages/opentelemetry-exporter-otlp-proto-common/1.45.1",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "opentelemetry-exporter-otlp-proto-common/1.45.1"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-68",
+      "name": "opentelemetry-exporter-otlp-proto-http",
+      "versionInfo": "1.45.1",
+      "downloadLocation": "https://pypi.org/packages/opentelemetry-exporter-otlp-proto-http/1.45.1",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "opentelemetry-exporter-otlp-proto-http/1.45.1"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-69",
+      "name": "opentelemetry-proto",
+      "versionInfo": "1.45.1",
+      "downloadLocation": "https://pypi.org/packages/opentelemetry-proto/1.45.1",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "opentelemetry-proto/1.45.1"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-70",
+      "name": "opentelemetry-sdk",
+      "versionInfo": "1.45.1",
+      "downloadLocation": "https://pypi.org/packages/opentelemetry-sdk/1.45.1",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "opentelemetry-sdk/1.45.1"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-71",
+      "name": "opentelemetry-semantic-conventions",
+      "versionInfo": "0.66b1",
+      "downloadLocation": "https://pypi.org/packages/opentelemetry-semantic-conventions/0.66b1",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "opentelemetry-semantic-conventions/0.66b1"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-72",
+      "name": "packaging",
+      "versionInfo": "26.3",
+      "downloadLocation": "https://pypi.org/packages/packaging/26.3",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "packaging/26.3"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-73",
+      "name": "pandas",
+      "versionInfo": "3.0.6",
+      "downloadLocation": "https://pypi.org/packages/pandas/3.0.6",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "BSD 3-Clause License",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "pandas/3.0.6"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-74",
+      "name": "parso",
+      "versionInfo": "0.8.7",
+      "downloadLocation": "https://pypi.org/packages/parso/0.8.7",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "parso/0.8.7"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: allowed"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-75",
+      "name": "pexpect",
+      "versionInfo": "4.9.0",
+      "downloadLocation": "https://pypi.org/packages/pexpect/4.9.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "ISC license",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "pexpect/4.9.0"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-76",
+      "name": "pillow",
+      "versionInfo": "12.3.0",
+      "downloadLocation": "https://pypi.org/packages/pillow/12.3.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "pillow/12.3.0"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-77",
+      "name": "pip",
+      "versionInfo": "25.0.1",
+      "downloadLocation": "https://pypi.org/packages/pip/25.0.1",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "pip/25.0.1"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: allowed"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-78",
+      "name": "platformdirs",
+      "versionInfo": "4.12.3",
+      "downloadLocation": "https://pypi.org/packages/platformdirs/4.12.3",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "platformdirs/4.12.3"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-79",
+      "name": "prompt_toolkit",
+      "versionInfo": "3.0.53",
+      "downloadLocation": "https://pypi.org/packages/prompt_toolkit/3.0.53",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "prompt_toolkit/3.0.53"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-80",
+      "name": "protobuf",
+      "versionInfo": "7.36.2",
+      "downloadLocation": "https://pypi.org/packages/protobuf/7.36.2",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "3-Clause BSD License",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "protobuf/7.36.2"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-81",
+      "name": "psutil",
+      "versionInfo": "7.2.2",
+      "downloadLocation": "https://pypi.org/packages/psutil/7.2.2",
+      "filesAnalyzed": false,
+      "licenseConcluded": "BSD-3-Clause",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "psutil/7.2.2"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: allowed"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-82",
+      "name": "ptyprocess",
+      "versionInfo": "0.7.0",
+      "downloadLocation": "https://pypi.org/packages/ptyprocess/0.7.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "ptyprocess/0.7.0"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-83",
+      "name": "pure_eval",
+      "versionInfo": "0.2.4",
+      "downloadLocation": "https://pypi.org/packages/pure_eval/0.2.4",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "pure_eval/0.2.4"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: allowed"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-84",
+      "name": "pyarrow",
+      "versionInfo": "25.0.1",
+      "downloadLocation": "https://pypi.org/packages/pyarrow/25.0.1",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "pyarrow/25.0.1"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-85",
+      "name": "pyasn1",
+      "versionInfo": "0.6.4",
+      "downloadLocation": "https://pypi.org/packages/pyasn1/0.6.4",
+      "filesAnalyzed": false,
+      "licenseConcluded": "BSD-2-Clause",
+      "licenseDeclared": "BSD-2-Clause",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "pyasn1/0.6.4"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: allowed"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-86",
+      "name": "pyasn1_modules",
+      "versionInfo": "0.4.2",
+      "downloadLocation": "https://pypi.org/packages/pyasn1_modules/0.4.2",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "BSD",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "pyasn1_modules/0.4.2"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-87",
+      "name": "pycparser",
+      "versionInfo": "3.0",
+      "downloadLocation": "https://pypi.org/packages/pycparser/3.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "pycparser/3.0"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-88",
+      "name": "pydantic",
+      "versionInfo": "2.13.5",
+      "downloadLocation": "https://pypi.org/packages/pydantic/2.13.5",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "pydantic/2.13.5"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: allowed"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-89",
+      "name": "pydantic_core",
+      "versionInfo": "2.46.5",
+      "downloadLocation": "https://pypi.org/packages/pydantic_core/2.46.5",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "pydantic_core/2.46.5"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-90",
+      "name": "pydantic-settings",
+      "versionInfo": "2.15.0",
+      "downloadLocation": "https://pypi.org/packages/pydantic-settings/2.15.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "pydantic-settings/2.15.0"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-91",
+      "name": "pydeck",
+      "versionInfo": "0.9.3",
+      "downloadLocation": "https://pypi.org/packages/pydeck/0.9.3",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache License 2.0",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "pydeck/0.9.3"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-92",
+      "name": "pygments",
+      "versionInfo": "2.21.0",
+      "downloadLocation": "https://pypi.org/packages/pygments/2.21.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "pygments/2.21.0"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-93",
+      "name": "pyjwt",
+      "versionInfo": "2.15.1",
+      "downloadLocation": "https://pypi.org/packages/pyjwt/2.15.1",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "pyjwt/2.15.1"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-94",
+      "name": "pyperclip",
+      "versionInfo": "1.11.0",
+      "downloadLocation": "https://pypi.org/packages/pyperclip/1.11.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "BSD",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "pyperclip/1.11.0"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-95",
+      "name": "python-dateutil",
+      "versionInfo": "2.9.0.post0",
+      "downloadLocation": "https://pypi.org/packages/python-dateutil/2.9.0.post0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Dual License",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "python-dateutil/2.9.0.post0"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-96",
+      "name": "python-dotenv",
+      "versionInfo": "1.2.4",
+      "downloadLocation": "https://pypi.org/packages/python-dotenv/1.2.4",
+      "filesAnalyzed": false,
+      "licenseConcluded": "BSD-3-Clause",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "python-dotenv/1.2.4"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: allowed"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-97",
+      "name": "python-multipart",
+      "versionInfo": "0.0.32",
+      "downloadLocation": "https://pypi.org/packages/python-multipart/0.0.32",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "python-multipart/0.0.32"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-98",
+      "name": "pyyaml",
+      "versionInfo": "6.0.3",
+      "downloadLocation": "https://pypi.org/packages/pyyaml/6.0.3",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "pyyaml/6.0.3"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: allowed"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-99",
+      "name": "pyzmq",
+      "versionInfo": "27.2.0",
+      "downloadLocation": "https://pypi.org/packages/pyzmq/27.2.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "pyzmq/27.2.0"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-100",
+      "name": "referencing",
+      "versionInfo": "0.37.0",
+      "downloadLocation": "https://pypi.org/packages/referencing/0.37.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "referencing/0.37.0"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-101",
+      "name": "requests",
+      "versionInfo": "2.34.2",
+      "downloadLocation": "https://pypi.org/packages/requests/2.34.2",
+      "filesAnalyzed": false,
+      "licenseConcluded": "Apache-2.0",
+      "licenseDeclared": "Apache-2.0",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "requests/2.34.2"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: allowed"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-102",
+      "name": "rich",
+      "versionInfo": "15.0.0",
+      "downloadLocation": "https://pypi.org/packages/rich/15.0.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "rich/15.0.0"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: allowed"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-103",
+      "name": "rpds-py",
+      "versionInfo": "2026.9.1",
+      "downloadLocation": "https://pypi.org/packages/rpds-py/2026.9.1",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "rpds-py/2026.9.1"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-104",
+      "name": "secretstorage",
+      "versionInfo": "3.5.0",
+      "downloadLocation": "https://pypi.org/packages/secretstorage/3.5.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "secretstorage/3.5.0"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-105",
+      "name": "setuptools",
+      "versionInfo": "84.0.0",
+      "downloadLocation": "https://pypi.org/packages/setuptools/84.0.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "setuptools/84.0.0"
+        }
+      ],
+      "annotation": "Purpose: build, Status: allowed"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-106",
+      "name": "six",
+      "versionInfo": "1.17.0",
+      "downloadLocation": "https://pypi.org/packages/six/1.17.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "six/1.17.0"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: allowed"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-107",
+      "name": "smmap",
+      "versionInfo": "5.0.3",
+      "downloadLocation": "https://pypi.org/packages/smmap/5.0.3",
+      "filesAnalyzed": false,
+      "licenseConcluded": "BSD-3-Clause",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "smmap/5.0.3"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: allowed"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-108",
+      "name": "sounddevice",
+      "versionInfo": "0.5.6",
+      "downloadLocation": "https://pypi.org/packages/sounddevice/0.5.6",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "sounddevice/0.5.6"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-109",
+      "name": "soupsieve",
+      "versionInfo": "2.10",
+      "downloadLocation": "https://pypi.org/packages/soupsieve/2.10",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "soupsieve/2.10"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-110",
+      "name": "sse-starlette",
+      "versionInfo": "3.5.0",
+      "downloadLocation": "https://pypi.org/packages/sse-starlette/3.5.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "sse-starlette/3.5.0"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-111",
+      "name": "stack-data",
+      "versionInfo": "0.6.3",
+      "downloadLocation": "https://pypi.org/packages/stack-data/0.6.3",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "stack-data/0.6.3"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: allowed"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-112",
+      "name": "starlette",
+      "versionInfo": "1.7.0",
+      "downloadLocation": "https://pypi.org/packages/starlette/1.7.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "starlette/1.7.0"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-113",
+      "name": "streamlit",
+      "versionInfo": "1.65.0",
+      "downloadLocation": "https://pypi.org/packages/streamlit/1.65.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "Apache-2.0",
+      "licenseDeclared": "Apache-2.0",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "streamlit/1.65.0"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: allowed"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-114",
+      "name": "structlog",
+      "versionInfo": "26.1.0",
+      "downloadLocation": "https://pypi.org/packages/structlog/26.1.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "structlog/26.1.0"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-115",
+      "name": "tenacity",
+      "versionInfo": "9.2.1",
+      "downloadLocation": "https://pypi.org/packages/tenacity/9.2.1",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "tenacity/9.2.1"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-116",
+      "name": "textual",
+      "versionInfo": "8.2.4",
+      "downloadLocation": "https://pypi.org/packages/textual/8.2.4",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "textual/8.2.4"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: allowed"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-117",
+      "name": "textual-speedups",
+      "versionInfo": "0.2.1",
+      "downloadLocation": "https://pypi.org/packages/textual-speedups/0.2.1",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "textual-speedups/0.2.1"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-118",
+      "name": "toml",
+      "versionInfo": "0.10.2",
+      "downloadLocation": "https://pypi.org/packages/toml/0.10.2",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "toml/0.10.2"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: allowed"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-119",
+      "name": "tomli_w",
+      "versionInfo": "1.2.0",
+      "downloadLocation": "https://pypi.org/packages/tomli_w/1.2.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "tomli_w/1.2.0"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-120",
+      "name": "tornado",
+      "versionInfo": "6.5.10",
+      "downloadLocation": "https://pypi.org/packages/tornado/6.5.10",
+      "filesAnalyzed": false,
+      "licenseConcluded": "Apache-2.0",
+      "licenseDeclared": "Apache-2.0",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "tornado/6.5.10"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: allowed"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-121",
+      "name": "traitlets",
+      "versionInfo": "5.16.1",
+      "downloadLocation": "https://pypi.org/packages/traitlets/5.16.1",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "BSD 3-Clause License",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "traitlets/5.16.1"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-122",
+      "name": "tree-sitter",
+      "versionInfo": "0.26.0",
+      "downloadLocation": "https://pypi.org/packages/tree-sitter/0.26.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "tree-sitter/0.26.0"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-123",
+      "name": "tree-sitter-bash",
+      "versionInfo": "0.25.1",
+      "downloadLocation": "https://pypi.org/packages/tree-sitter-bash/0.25.1",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "tree-sitter-bash/0.25.1"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: allowed"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-124",
+      "name": "truststore",
+      "versionInfo": "0.10.4",
+      "downloadLocation": "https://pypi.org/packages/truststore/0.10.4",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "truststore/0.10.4"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-125",
+      "name": "typing_extensions",
+      "versionInfo": "4.16.0",
+      "downloadLocation": "https://pypi.org/packages/typing_extensions/4.16.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "typing_extensions/4.16.0"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-126",
+      "name": "typing-inspection",
+      "versionInfo": "0.4.4",
+      "downloadLocation": "https://pypi.org/packages/typing-inspection/0.4.4",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "typing-inspection/0.4.4"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-127",
+      "name": "urllib3",
+      "versionInfo": "2.8.0",
+      "downloadLocation": "https://pypi.org/packages/urllib3/2.8.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "urllib3/2.8.0"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-128",
+      "name": "uvicorn",
+      "versionInfo": "0.54.0",
+      "downloadLocation": "https://pypi.org/packages/uvicorn/0.54.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "uvicorn/0.54.0"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-129",
+      "name": "watchdog",
+      "versionInfo": "6.0.0",
+      "downloadLocation": "https://pypi.org/packages/watchdog/6.0.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "Apache-2.0",
+      "licenseDeclared": "Apache-2.0",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "watchdog/6.0.0"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: allowed"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-130",
+      "name": "watchfiles",
+      "versionInfo": "1.3.0",
+      "downloadLocation": "https://pypi.org/packages/watchfiles/1.3.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "watchfiles/1.3.0"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: allowed"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-131",
+      "name": "wcwidth",
+      "versionInfo": "0.9.2",
+      "downloadLocation": "https://pypi.org/packages/wcwidth/0.9.2",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "wcwidth/0.9.2"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-132",
+      "name": "websockets",
+      "versionInfo": "17.2",
+      "downloadLocation": "https://pypi.org/packages/websockets/17.2",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "websockets/17.2"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-133",
+      "name": "wheel",
+      "versionInfo": "0.48.0",
+      "downloadLocation": "https://pypi.org/packages/wheel/0.48.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "wheel/0.48.0"
+        }
+      ],
+      "annotation": "Purpose: build, Status: allowed"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-134",
+      "name": "zstandard",
+      "versionInfo": "0.25.0",
+      "downloadLocation": "https://pypi.org/packages/zstandard/0.25.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "pypi",
+          "referenceLocator": "zstandard/0.25.0"
+        }
+      ],
+      "annotation": "Purpose: runtime, Status: unknown"
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Project"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-0"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-1"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-2"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-3"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-4"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-5"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-6"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-7"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-8"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-9"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-10"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-11"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-12"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-13"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-14"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-15"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-16"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-17"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-18"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-19"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-20"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-21"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-22"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-23"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-24"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-25"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-26"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-27"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-28"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-29"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-30"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-31"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-32"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-33"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-34"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-35"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-36"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-37"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-38"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-39"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-40"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-41"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-42"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-43"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-44"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-45"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-46"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-47"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-48"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-49"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-50"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-51"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-52"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-53"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-54"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-55"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-56"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-57"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-58"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-59"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-60"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-61"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-62"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-63"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-64"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-65"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-66"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-67"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-68"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-69"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-70"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-71"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-72"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-73"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-74"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-75"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-76"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-77"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-78"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-79"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-80"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-81"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-82"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-83"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-84"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-85"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-86"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-87"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-88"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-89"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-90"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-91"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-92"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-93"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-94"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-95"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-96"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-97"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-98"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-99"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-100"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-101"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-102"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-103"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-104"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-105"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-106"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-107"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-108"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-109"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-110"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-111"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-112"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-113"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-114"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-115"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-116"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-117"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-118"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-119"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-120"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-121"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-122"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-123"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-124"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-125"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-126"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-127"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-128"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-129"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-130"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-131"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-132"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-133"
+    },
+    {
+      "spdxElementId": "SPDXRef-Project",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-134"
+    }
+  ]
+}

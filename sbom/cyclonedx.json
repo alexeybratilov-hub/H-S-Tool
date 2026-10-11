@@ -1,0 +1,4480 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:b05cfc20-6220-4b00-b94b-0c0d5ee1d39a",
+  "version": 1,
+  "metadata": {
+    "component": {
+      "type": "application",
+      "bom-ref": "H-S-Tool/1.0.0",
+      "name": "H-S-Tool",
+      "version": "1.0.0",
+      "purl": "pkg:hstool/H-S-Tool@1.0.0"
+    },
+    "timestamp": "2026-10-11T14:08:51Z",
+    "tools": [
+      {
+        "vendor": "H-S-Tool",
+        "name": "sbom_generate.py",
+        "version": "1.0.0"
+      }
+    ]
+  },
+  "components": [
+    {
+      "type": "library",
+      "bom-ref": "agent-client-protocol/0.9.0",
+      "name": "agent-client-protocol",
+      "version": "0.9.0",
+      "purl": "pkg:pypi/agent-client-protocol@0.9.0",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "agent-client-protocol/0.9.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "altair/6.3.0",
+      "name": "altair",
+      "version": "6.3.0",
+      "purl": "pkg:pypi/altair@6.3.0",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Copyright (c) 2015-2025, Vega-Altair Developers",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "altair/6.3.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "annotated-types/0.8.0",
+      "name": "annotated-types",
+      "version": "0.8.0",
+      "purl": "pkg:pypi/annotated-types@0.8.0",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "annotated-types/0.8.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "anyio/4.15.1",
+      "name": "anyio",
+      "version": "4.15.1",
+      "purl": "pkg:pypi/anyio@4.15.1",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "anyio/4.15.1"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "asttokens/3.0.2",
+      "name": "asttokens",
+      "version": "3.0.2",
+      "purl": "pkg:pypi/asttokens@3.0.2",
+      "description": "",
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "licenseConcluded": "Apache-2.0",
+      "licenseDeclared": "Apache 2.0",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "asttokens/3.0.2"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "allowed"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "attrs/26.1.0",
+      "name": "attrs",
+      "version": "26.1.0",
+      "purl": "pkg:pypi/attrs@26.1.0",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "attrs/26.1.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "beautifulsoup4/4.15.0",
+      "name": "beautifulsoup4",
+      "version": "4.15.0",
+      "purl": "pkg:pypi/beautifulsoup4@4.15.0",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT License",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "beautifulsoup4/4.15.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "cachetools/7.2.1",
+      "name": "cachetools",
+      "version": "7.2.1",
+      "purl": "pkg:pypi/cachetools@7.2.1",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "cachetools/7.2.1"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "certifi/2026.7.22",
+      "name": "certifi",
+      "version": "2026.7.22",
+      "purl": "pkg:pypi/certifi@2026.7.22",
+      "description": "",
+      "licenses": [
+        "MPL-2.0"
+      ],
+      "licenseConcluded": "MPL-2.0",
+      "licenseDeclared": "MPL-2.0",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "certifi/2026.7.22"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "requires_review"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "cffi/2.1.1",
+      "name": "cffi",
+      "version": "2.1.1",
+      "purl": "pkg:pypi/cffi@2.1.1",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "cffi/2.1.1"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "charset-normalizer/3.5.2",
+      "name": "charset-normalizer",
+      "version": "3.5.2",
+      "purl": "pkg:pypi/charset-normalizer@3.5.2",
+      "description": "",
+      "licenses": [
+        "MIT"
+      ],
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "charset-normalizer/3.5.2"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "allowed"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "click/8.5.0",
+      "name": "click",
+      "version": "8.5.0",
+      "purl": "pkg:pypi/click@8.5.0",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "click/8.5.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "comm/0.2.3",
+      "name": "comm",
+      "version": "0.2.3",
+      "purl": "pkg:pypi/comm@0.2.3",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "BSD 3-Clause License",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "comm/0.2.3"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "cryptography/50.0.2",
+      "name": "cryptography",
+      "version": "50.0.2",
+      "purl": "pkg:pypi/cryptography@50.0.2",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "cryptography/50.0.2"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "debugpy/1.8.22",
+      "name": "debugpy",
+      "version": "1.8.22",
+      "purl": "pkg:pypi/debugpy@1.8.22",
+      "description": "",
+      "licenses": [
+        "MIT"
+      ],
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "debugpy/1.8.22"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "allowed"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "eval_type_backport/0.4.0",
+      "name": "eval_type_backport",
+      "version": "0.4.0",
+      "purl": "pkg:pypi/eval-type-backport@0.4.0",
+      "description": "",
+      "licenses": [
+        "MIT"
+      ],
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "eval_type_backport/0.4.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "allowed"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "executing/2.2.1",
+      "name": "executing",
+      "version": "2.2.1",
+      "purl": "pkg:pypi/executing@2.2.1",
+      "description": "",
+      "licenses": [
+        "MIT"
+      ],
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "executing/2.2.1"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "allowed"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "gitdb/4.0.12",
+      "name": "gitdb",
+      "version": "4.0.12",
+      "purl": "pkg:pypi/gitdb@4.0.12",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "BSD License",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "gitdb/4.0.12"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "gitpython/3.2.0",
+      "name": "gitpython",
+      "version": "3.2.0",
+      "purl": "pkg:pypi/gitpython@3.2.0",
+      "description": "",
+      "licenses": [
+        "BSD-3-Clause"
+      ],
+      "licenseConcluded": "BSD-3-Clause",
+      "licenseDeclared": "BSD-3-Clause",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "gitpython/3.2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "allowed"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "giturlparse/0.15.0",
+      "name": "giturlparse",
+      "version": "0.15.0",
+      "purl": "pkg:pypi/giturlparse@0.15.0",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache v2",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "giturlparse/0.15.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "google-auth/2.60.0",
+      "name": "google-auth",
+      "version": "2.60.0",
+      "purl": "pkg:pypi/google-auth@2.60.0",
+      "description": "",
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "licenseConcluded": "Apache-2.0",
+      "licenseDeclared": "Apache 2.0",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "google-auth/2.60.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "allowed"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "googleapis-common-protos/1.75.5",
+      "name": "googleapis-common-protos",
+      "version": "1.75.5",
+      "purl": "pkg:pypi/googleapis-common-protos@1.75.5",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "googleapis-common-protos/1.75.5"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "h11/0.16.0",
+      "name": "h11",
+      "version": "0.16.0",
+      "purl": "pkg:pypi/h11@0.16.0",
+      "description": "",
+      "licenses": [
+        "MIT"
+      ],
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "h11/0.16.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "allowed"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "httpcore/1.0.9",
+      "name": "httpcore",
+      "version": "1.0.9",
+      "purl": "pkg:pypi/httpcore@1.0.9",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "httpcore/1.0.9"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "httpcore2/2.13.1",
+      "name": "httpcore2",
+      "version": "2.13.1",
+      "purl": "pkg:pypi/httpcore2@2.13.1",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "httpcore2/2.13.1"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "httptools/0.9.0",
+      "name": "httptools",
+      "version": "0.9.0",
+      "purl": "pkg:pypi/httptools@0.9.0",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "httptools/0.9.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "httpx/0.28.1",
+      "name": "httpx",
+      "version": "0.28.1",
+      "purl": "pkg:pypi/httpx@0.28.1",
+      "description": "",
+      "licenses": [
+        "BSD-3-Clause"
+      ],
+      "licenseConcluded": "BSD-3-Clause",
+      "licenseDeclared": "BSD-3-Clause",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "httpx/0.28.1"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "allowed"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "httpx2/2.13.1",
+      "name": "httpx2",
+      "version": "2.13.1",
+      "purl": "pkg:pypi/httpx2@2.13.1",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "httpx2/2.13.1"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "idna/3.20",
+      "name": "idna",
+      "version": "3.20",
+      "purl": "pkg:pypi/idna@3.20",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "idna/3.20"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "ipykernel/7.3.0",
+      "name": "ipykernel",
+      "version": "7.3.0",
+      "purl": "pkg:pypi/ipykernel@7.3.0",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "ipykernel/7.3.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "ipython/9.17.1",
+      "name": "ipython",
+      "version": "9.17.1",
+      "purl": "pkg:pypi/ipython@9.17.1",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "ipython/9.17.1"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "ipython_pygments_lexers/1.1.1",
+      "name": "ipython_pygments_lexers",
+      "version": "1.1.1",
+      "purl": "pkg:pypi/ipython-pygments-lexers@1.1.1",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "ipython_pygments_lexers/1.1.1"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "itsdangerous/2.2.0",
+      "name": "itsdangerous",
+      "version": "2.2.0",
+      "purl": "pkg:pypi/itsdangerous@2.2.0",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "itsdangerous/2.2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "jaraco.classes/3.4.0",
+      "name": "jaraco.classes",
+      "version": "3.4.0",
+      "purl": "pkg:pypi/jaraco.classes@3.4.0",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "jaraco.classes/3.4.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "jaraco.context/6.1.2",
+      "name": "jaraco.context",
+      "version": "6.1.2",
+      "purl": "pkg:pypi/jaraco.context@6.1.2",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "jaraco.context/6.1.2"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "jaraco.functools/4.6.0",
+      "name": "jaraco.functools",
+      "version": "4.6.0",
+      "purl": "pkg:pypi/jaraco.functools@4.6.0",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "jaraco.functools/4.6.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "jedi/0.20.0",
+      "name": "jedi",
+      "version": "0.20.0",
+      "purl": "pkg:pypi/jedi@0.20.0",
+      "description": "",
+      "licenses": [
+        "MIT"
+      ],
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "jedi/0.20.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "allowed"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "jeepney/0.9.0",
+      "name": "jeepney",
+      "version": "0.9.0",
+      "purl": "pkg:pypi/jeepney@0.9.0",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "jeepney/0.9.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "jinja2/3.1.6",
+      "name": "jinja2",
+      "version": "3.1.6",
+      "purl": "pkg:pypi/jinja2@3.1.6",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "jinja2/3.1.6"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "jsonpatch/1.33",
+      "name": "jsonpatch",
+      "version": "1.33",
+      "purl": "pkg:pypi/jsonpatch@1.33",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Modified BSD License",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "jsonpatch/1.33"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "jsonpath-python/1.1.6",
+      "name": "jsonpath-python",
+      "version": "1.1.6",
+      "purl": "pkg:pypi/jsonpath-python@1.1.6",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT License",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "jsonpath-python/1.1.6"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "jsonpointer/3.1.1",
+      "name": "jsonpointer",
+      "version": "3.1.1",
+      "purl": "pkg:pypi/jsonpointer@3.1.1",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Modified BSD License",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "jsonpointer/3.1.1"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "jsonschema/4.26.0",
+      "name": "jsonschema",
+      "version": "4.26.0",
+      "purl": "pkg:pypi/jsonschema@4.26.0",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "jsonschema/4.26.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "jsonschema-specifications/2025.9.1",
+      "name": "jsonschema-specifications",
+      "version": "2025.9.1",
+      "purl": "pkg:pypi/jsonschema-specifications@2025.9.1",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "jsonschema-specifications/2025.9.1"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "jupyter_client/8.10.0",
+      "name": "jupyter_client",
+      "version": "8.10.0",
+      "purl": "pkg:pypi/jupyter-client@8.10.0",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "BSD 3-Clause License",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "jupyter_client/8.10.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "jupyter_core/5.9.1",
+      "name": "jupyter_core",
+      "version": "5.9.1",
+      "purl": "pkg:pypi/jupyter-core@5.9.1",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "jupyter_core/5.9.1"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "keyring/25.7.0",
+      "name": "keyring",
+      "version": "25.7.0",
+      "purl": "pkg:pypi/keyring@25.7.0",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "keyring/25.7.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "linkify-it-py/2.2.0",
+      "name": "linkify-it-py",
+      "version": "2.2.0",
+      "purl": "pkg:pypi/linkify-it-py@2.2.0",
+      "description": "",
+      "licenses": [
+        "MIT"
+      ],
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "linkify-it-py/2.2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "allowed"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "markdown-it-py/4.2.0",
+      "name": "markdown-it-py",
+      "version": "4.2.0",
+      "purl": "pkg:pypi/markdown-it-py@4.2.0",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "markdown-it-py/4.2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "markdownify/1.2.3",
+      "name": "markdownify",
+      "version": "1.2.3",
+      "purl": "pkg:pypi/markdownify@1.2.3",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "markdownify/1.2.3"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "markupsafe/3.0.4",
+      "name": "markupsafe",
+      "version": "3.0.4",
+      "purl": "pkg:pypi/markupsafe@3.0.4",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "markupsafe/3.0.4"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "matplotlib-inline/0.2.2",
+      "name": "matplotlib-inline",
+      "version": "0.2.2",
+      "purl": "pkg:pypi/matplotlib-inline@0.2.2",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "matplotlib-inline/0.2.2"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "mcp/2.3.0",
+      "name": "mcp",
+      "version": "2.3.0",
+      "purl": "pkg:pypi/mcp@2.3.0",
+      "description": "",
+      "licenses": [
+        "MIT"
+      ],
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "mcp/2.3.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "allowed"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "mcp-types/2.3.0",
+      "name": "mcp-types",
+      "version": "2.3.0",
+      "purl": "pkg:pypi/mcp-types@2.3.0",
+      "description": "",
+      "licenses": [
+        "MIT"
+      ],
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "mcp-types/2.3.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "allowed"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "mdit-py-plugins/0.6.1",
+      "name": "mdit-py-plugins",
+      "version": "0.6.1",
+      "purl": "pkg:pypi/mdit-py-plugins@0.6.1",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "mdit-py-plugins/0.6.1"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "mdurl/0.1.2",
+      "name": "mdurl",
+      "version": "0.1.2",
+      "purl": "pkg:pypi/mdurl@0.1.2",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "mdurl/0.1.2"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "mistral-vibe/2.9.4",
+      "name": "mistral-vibe",
+      "version": "2.9.4",
+      "purl": "pkg:pypi/mistral-vibe@2.9.4",
+      "description": "",
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "licenseConcluded": "Apache-2.0",
+      "licenseDeclared": "Apache-2.0",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "mistral-vibe/2.9.4"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "allowed"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "mistralai/3.1.0",
+      "name": "mistralai",
+      "version": "3.1.0",
+      "purl": "pkg:pypi/mistralai@3.1.0",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "mistralai/3.1.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "mistralai-vibe-sdk/0.14.2",
+      "name": "mistralai-vibe-sdk",
+      "version": "0.14.2",
+      "purl": "pkg:pypi/mistralai-vibe-sdk@0.14.2",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "mistralai-vibe-sdk/0.14.2"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "more-itertools/11.1.0",
+      "name": "more-itertools",
+      "version": "11.1.0",
+      "purl": "pkg:pypi/more-itertools@11.1.0",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "more-itertools/11.1.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "narwhals/2.27.1",
+      "name": "narwhals",
+      "version": "2.27.1",
+      "purl": "pkg:pypi/narwhals@2.27.1",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "narwhals/2.27.1"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "nest-asyncio/1.6.0",
+      "name": "nest-asyncio",
+      "version": "1.6.0",
+      "purl": "pkg:pypi/nest-asyncio@1.6.0",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "BSD",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "nest-asyncio/1.6.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "nest-asyncio2/1.7.3",
+      "name": "nest-asyncio2",
+      "version": "1.7.3",
+      "purl": "pkg:pypi/nest-asyncio2@1.7.3",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "BSD",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "nest-asyncio2/1.7.3"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "numpy/2.5.4",
+      "name": "numpy",
+      "version": "2.5.4",
+      "purl": "pkg:pypi/numpy@2.5.4",
+      "description": "",
+      "licenses": [
+        "BSD-3-Clause"
+      ],
+      "licenseConcluded": "BSD-3-Clause",
+      "licenseDeclared": "BSD-3-Clause",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "numpy/2.5.4"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "allowed"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "known_db"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "opentelemetry-api/1.45.1",
+      "name": "opentelemetry-api",
+      "version": "1.45.1",
+      "purl": "pkg:pypi/opentelemetry-api@1.45.1",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "opentelemetry-api/1.45.1"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "opentelemetry-exporter-http-transport/0.66b1",
+      "name": "opentelemetry-exporter-http-transport",
+      "version": "0.66b1",
+      "purl": "pkg:pypi/opentelemetry-exporter-http-transport@0.66b1",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "opentelemetry-exporter-http-transport/0.66b1"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "opentelemetry-exporter-otlp-common/0.66b1",
+      "name": "opentelemetry-exporter-otlp-common",
+      "version": "0.66b1",
+      "purl": "pkg:pypi/opentelemetry-exporter-otlp-common@0.66b1",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "opentelemetry-exporter-otlp-common/0.66b1"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "opentelemetry-exporter-otlp-proto-common/1.45.1",
+      "name": "opentelemetry-exporter-otlp-proto-common",
+      "version": "1.45.1",
+      "purl": "pkg:pypi/opentelemetry-exporter-otlp-proto-common@1.45.1",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "opentelemetry-exporter-otlp-proto-common/1.45.1"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "opentelemetry-exporter-otlp-proto-http/1.45.1",
+      "name": "opentelemetry-exporter-otlp-proto-http",
+      "version": "1.45.1",
+      "purl": "pkg:pypi/opentelemetry-exporter-otlp-proto-http@1.45.1",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "opentelemetry-exporter-otlp-proto-http/1.45.1"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "opentelemetry-proto/1.45.1",
+      "name": "opentelemetry-proto",
+      "version": "1.45.1",
+      "purl": "pkg:pypi/opentelemetry-proto@1.45.1",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "opentelemetry-proto/1.45.1"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "opentelemetry-sdk/1.45.1",
+      "name": "opentelemetry-sdk",
+      "version": "1.45.1",
+      "purl": "pkg:pypi/opentelemetry-sdk@1.45.1",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "opentelemetry-sdk/1.45.1"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "opentelemetry-semantic-conventions/0.66b1",
+      "name": "opentelemetry-semantic-conventions",
+      "version": "0.66b1",
+      "purl": "pkg:pypi/opentelemetry-semantic-conventions@0.66b1",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "opentelemetry-semantic-conventions/0.66b1"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "packaging/26.3",
+      "name": "packaging",
+      "version": "26.3",
+      "purl": "pkg:pypi/packaging@26.3",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "packaging/26.3"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pandas/3.0.6",
+      "name": "pandas",
+      "version": "3.0.6",
+      "purl": "pkg:pypi/pandas@3.0.6",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "BSD 3-Clause License",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "pandas/3.0.6"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "parso/0.8.7",
+      "name": "parso",
+      "version": "0.8.7",
+      "purl": "pkg:pypi/parso@0.8.7",
+      "description": "",
+      "licenses": [
+        "MIT"
+      ],
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "parso/0.8.7"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "allowed"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pexpect/4.9.0",
+      "name": "pexpect",
+      "version": "4.9.0",
+      "purl": "pkg:pypi/pexpect@4.9.0",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "ISC license",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "pexpect/4.9.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pillow/12.3.0",
+      "name": "pillow",
+      "version": "12.3.0",
+      "purl": "pkg:pypi/pillow@12.3.0",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "pillow/12.3.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pip/25.0.1",
+      "name": "pip",
+      "version": "25.0.1",
+      "purl": "pkg:pypi/pip@25.0.1",
+      "description": "",
+      "licenses": [
+        "MIT"
+      ],
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "pip/25.0.1"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "allowed"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "platformdirs/4.12.3",
+      "name": "platformdirs",
+      "version": "4.12.3",
+      "purl": "pkg:pypi/platformdirs@4.12.3",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "platformdirs/4.12.3"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "prompt_toolkit/3.0.53",
+      "name": "prompt_toolkit",
+      "version": "3.0.53",
+      "purl": "pkg:pypi/prompt-toolkit@3.0.53",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "prompt_toolkit/3.0.53"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "protobuf/7.36.2",
+      "name": "protobuf",
+      "version": "7.36.2",
+      "purl": "pkg:pypi/protobuf@7.36.2",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "3-Clause BSD License",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "protobuf/7.36.2"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "psutil/7.2.2",
+      "name": "psutil",
+      "version": "7.2.2",
+      "purl": "pkg:pypi/psutil@7.2.2",
+      "description": "",
+      "licenses": [
+        "BSD-3-Clause"
+      ],
+      "licenseConcluded": "BSD-3-Clause",
+      "licenseDeclared": "BSD-3-Clause",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "psutil/7.2.2"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "allowed"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "ptyprocess/0.7.0",
+      "name": "ptyprocess",
+      "version": "0.7.0",
+      "purl": "pkg:pypi/ptyprocess@0.7.0",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "ptyprocess/0.7.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pure_eval/0.2.4",
+      "name": "pure_eval",
+      "version": "0.2.4",
+      "purl": "pkg:pypi/pure-eval@0.2.4",
+      "description": "",
+      "licenses": [
+        "MIT"
+      ],
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "pure_eval/0.2.4"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "allowed"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pyarrow/25.0.1",
+      "name": "pyarrow",
+      "version": "25.0.1",
+      "purl": "pkg:pypi/pyarrow@25.0.1",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "pyarrow/25.0.1"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pyasn1/0.6.4",
+      "name": "pyasn1",
+      "version": "0.6.4",
+      "purl": "pkg:pypi/pyasn1@0.6.4",
+      "description": "",
+      "licenses": [
+        "BSD-2-Clause"
+      ],
+      "licenseConcluded": "BSD-2-Clause",
+      "licenseDeclared": "BSD-2-Clause",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "pyasn1/0.6.4"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "allowed"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pyasn1_modules/0.4.2",
+      "name": "pyasn1_modules",
+      "version": "0.4.2",
+      "purl": "pkg:pypi/pyasn1-modules@0.4.2",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "BSD",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "pyasn1_modules/0.4.2"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pycparser/3.0",
+      "name": "pycparser",
+      "version": "3.0",
+      "purl": "pkg:pypi/pycparser@3.0",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "pycparser/3.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pydantic/2.13.5",
+      "name": "pydantic",
+      "version": "2.13.5",
+      "purl": "pkg:pypi/pydantic@2.13.5",
+      "description": "",
+      "licenses": [
+        "MIT"
+      ],
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "pydantic/2.13.5"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "allowed"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "known_db"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pydantic_core/2.46.5",
+      "name": "pydantic_core",
+      "version": "2.46.5",
+      "purl": "pkg:pypi/pydantic-core@2.46.5",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "pydantic_core/2.46.5"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pydantic-settings/2.15.0",
+      "name": "pydantic-settings",
+      "version": "2.15.0",
+      "purl": "pkg:pypi/pydantic-settings@2.15.0",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "pydantic-settings/2.15.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pydeck/0.9.3",
+      "name": "pydeck",
+      "version": "0.9.3",
+      "purl": "pkg:pypi/pydeck@0.9.3",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache License 2.0",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "pydeck/0.9.3"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pygments/2.21.0",
+      "name": "pygments",
+      "version": "2.21.0",
+      "purl": "pkg:pypi/pygments@2.21.0",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "pygments/2.21.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pyjwt/2.15.1",
+      "name": "pyjwt",
+      "version": "2.15.1",
+      "purl": "pkg:pypi/pyjwt@2.15.1",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "pyjwt/2.15.1"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pyperclip/1.11.0",
+      "name": "pyperclip",
+      "version": "1.11.0",
+      "purl": "pkg:pypi/pyperclip@1.11.0",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "BSD",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "pyperclip/1.11.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "python-dateutil/2.9.0.post0",
+      "name": "python-dateutil",
+      "version": "2.9.0.post0",
+      "purl": "pkg:pypi/python-dateutil@2.9.0.post0",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Dual License",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "python-dateutil/2.9.0.post0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "python-dotenv/1.2.4",
+      "name": "python-dotenv",
+      "version": "1.2.4",
+      "purl": "pkg:pypi/python-dotenv@1.2.4",
+      "description": "",
+      "licenses": [
+        "BSD-3-Clause"
+      ],
+      "licenseConcluded": "BSD-3-Clause",
+      "licenseDeclared": "BSD-3-Clause",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "python-dotenv/1.2.4"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "allowed"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "python-multipart/0.0.32",
+      "name": "python-multipart",
+      "version": "0.0.32",
+      "purl": "pkg:pypi/python-multipart@0.0.32",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "python-multipart/0.0.32"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pyyaml/6.0.3",
+      "name": "pyyaml",
+      "version": "6.0.3",
+      "purl": "pkg:pypi/pyyaml@6.0.3",
+      "description": "",
+      "licenses": [
+        "MIT"
+      ],
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "pyyaml/6.0.3"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "allowed"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pyzmq/27.2.0",
+      "name": "pyzmq",
+      "version": "27.2.0",
+      "purl": "pkg:pypi/pyzmq@27.2.0",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "pyzmq/27.2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "referencing/0.37.0",
+      "name": "referencing",
+      "version": "0.37.0",
+      "purl": "pkg:pypi/referencing@0.37.0",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "referencing/0.37.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "requests/2.34.2",
+      "name": "requests",
+      "version": "2.34.2",
+      "purl": "pkg:pypi/requests@2.34.2",
+      "description": "",
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "licenseConcluded": "Apache-2.0",
+      "licenseDeclared": "Apache-2.0",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "requests/2.34.2"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "allowed"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "rich/15.0.0",
+      "name": "rich",
+      "version": "15.0.0",
+      "purl": "pkg:pypi/rich@15.0.0",
+      "description": "",
+      "licenses": [
+        "MIT"
+      ],
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "rich/15.0.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "allowed"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "rpds-py/2026.9.1",
+      "name": "rpds-py",
+      "version": "2026.9.1",
+      "purl": "pkg:pypi/rpds-py@2026.9.1",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "rpds-py/2026.9.1"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "secretstorage/3.5.0",
+      "name": "secretstorage",
+      "version": "3.5.0",
+      "purl": "pkg:pypi/secretstorage@3.5.0",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "secretstorage/3.5.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "setuptools/84.0.0",
+      "name": "setuptools",
+      "version": "84.0.0",
+      "purl": "pkg:pypi/setuptools@84.0.0",
+      "description": "",
+      "licenses": [
+        "MIT"
+      ],
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "setuptools/84.0.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "build"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "allowed"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "known_db"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "six/1.17.0",
+      "name": "six",
+      "version": "1.17.0",
+      "purl": "pkg:pypi/six@1.17.0",
+      "description": "",
+      "licenses": [
+        "MIT"
+      ],
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "six/1.17.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "allowed"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "smmap/5.0.3",
+      "name": "smmap",
+      "version": "5.0.3",
+      "purl": "pkg:pypi/smmap@5.0.3",
+      "description": "",
+      "licenses": [
+        "BSD-3-Clause"
+      ],
+      "licenseConcluded": "BSD-3-Clause",
+      "licenseDeclared": "BSD-3-Clause",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "smmap/5.0.3"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "allowed"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "sounddevice/0.5.6",
+      "name": "sounddevice",
+      "version": "0.5.6",
+      "purl": "pkg:pypi/sounddevice@0.5.6",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "sounddevice/0.5.6"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "soupsieve/2.10",
+      "name": "soupsieve",
+      "version": "2.10",
+      "purl": "pkg:pypi/soupsieve@2.10",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "soupsieve/2.10"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "sse-starlette/3.5.0",
+      "name": "sse-starlette",
+      "version": "3.5.0",
+      "purl": "pkg:pypi/sse-starlette@3.5.0",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "sse-starlette/3.5.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "stack-data/0.6.3",
+      "name": "stack-data",
+      "version": "0.6.3",
+      "purl": "pkg:pypi/stack-data@0.6.3",
+      "description": "",
+      "licenses": [
+        "MIT"
+      ],
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "stack-data/0.6.3"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "allowed"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "starlette/1.7.0",
+      "name": "starlette",
+      "version": "1.7.0",
+      "purl": "pkg:pypi/starlette@1.7.0",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "starlette/1.7.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "streamlit/1.65.0",
+      "name": "streamlit",
+      "version": "1.65.0",
+      "purl": "pkg:pypi/streamlit@1.65.0",
+      "description": "",
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "licenseConcluded": "Apache-2.0",
+      "licenseDeclared": "Apache-2.0",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "streamlit/1.65.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "allowed"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "known_db"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "structlog/26.1.0",
+      "name": "structlog",
+      "version": "26.1.0",
+      "purl": "pkg:pypi/structlog@26.1.0",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "structlog/26.1.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "tenacity/9.2.1",
+      "name": "tenacity",
+      "version": "9.2.1",
+      "purl": "pkg:pypi/tenacity@9.2.1",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "tenacity/9.2.1"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "textual/8.2.4",
+      "name": "textual",
+      "version": "8.2.4",
+      "purl": "pkg:pypi/textual@8.2.4",
+      "description": "",
+      "licenses": [
+        "MIT"
+      ],
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "textual/8.2.4"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "allowed"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "textual-speedups/0.2.1",
+      "name": "textual-speedups",
+      "version": "0.2.1",
+      "purl": "pkg:pypi/textual-speedups@0.2.1",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "textual-speedups/0.2.1"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "toml/0.10.2",
+      "name": "toml",
+      "version": "0.10.2",
+      "purl": "pkg:pypi/toml@0.10.2",
+      "description": "",
+      "licenses": [
+        "MIT"
+      ],
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "toml/0.10.2"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "allowed"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "tomli_w/1.2.0",
+      "name": "tomli_w",
+      "version": "1.2.0",
+      "purl": "pkg:pypi/tomli-w@1.2.0",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "tomli_w/1.2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "tornado/6.5.10",
+      "name": "tornado",
+      "version": "6.5.10",
+      "purl": "pkg:pypi/tornado@6.5.10",
+      "description": "",
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "licenseConcluded": "Apache-2.0",
+      "licenseDeclared": "Apache-2.0",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "tornado/6.5.10"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "allowed"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "traitlets/5.16.1",
+      "name": "traitlets",
+      "version": "5.16.1",
+      "purl": "pkg:pypi/traitlets@5.16.1",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "BSD 3-Clause License",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "traitlets/5.16.1"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "tree-sitter/0.26.0",
+      "name": "tree-sitter",
+      "version": "0.26.0",
+      "purl": "pkg:pypi/tree-sitter@0.26.0",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "tree-sitter/0.26.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "tree-sitter-bash/0.25.1",
+      "name": "tree-sitter-bash",
+      "version": "0.25.1",
+      "purl": "pkg:pypi/tree-sitter-bash@0.25.1",
+      "description": "",
+      "licenses": [
+        "MIT"
+      ],
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "tree-sitter-bash/0.25.1"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "allowed"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "truststore/0.10.4",
+      "name": "truststore",
+      "version": "0.10.4",
+      "purl": "pkg:pypi/truststore@0.10.4",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "truststore/0.10.4"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "typing_extensions/4.16.0",
+      "name": "typing_extensions",
+      "version": "4.16.0",
+      "purl": "pkg:pypi/typing-extensions@4.16.0",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "typing_extensions/4.16.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "typing-inspection/0.4.4",
+      "name": "typing-inspection",
+      "version": "0.4.4",
+      "purl": "pkg:pypi/typing-inspection@0.4.4",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "typing-inspection/0.4.4"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urllib3/2.8.0",
+      "name": "urllib3",
+      "version": "2.8.0",
+      "purl": "pkg:pypi/urllib3@2.8.0",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "urllib3/2.8.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "uvicorn/0.54.0",
+      "name": "uvicorn",
+      "version": "0.54.0",
+      "purl": "pkg:pypi/uvicorn@0.54.0",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "uvicorn/0.54.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "watchdog/6.0.0",
+      "name": "watchdog",
+      "version": "6.0.0",
+      "purl": "pkg:pypi/watchdog@6.0.0",
+      "description": "",
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "licenseConcluded": "Apache-2.0",
+      "licenseDeclared": "Apache-2.0",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "watchdog/6.0.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "allowed"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "watchfiles/1.3.0",
+      "name": "watchfiles",
+      "version": "1.3.0",
+      "purl": "pkg:pypi/watchfiles@1.3.0",
+      "description": "",
+      "licenses": [
+        "MIT"
+      ],
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "watchfiles/1.3.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "allowed"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "wcwidth/0.9.2",
+      "name": "wcwidth",
+      "version": "0.9.2",
+      "purl": "pkg:pypi/wcwidth@0.9.2",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "wcwidth/0.9.2"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "websockets/17.2",
+      "name": "websockets",
+      "version": "17.2",
+      "purl": "pkg:pypi/websockets@17.2",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "websockets/17.2"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "wheel/0.48.0",
+      "name": "wheel",
+      "version": "0.48.0",
+      "purl": "pkg:pypi/wheel@0.48.0",
+      "description": "",
+      "licenses": [
+        "MIT"
+      ],
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "wheel/0.48.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "build"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "allowed"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "known_db"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "zstandard/0.25.0",
+      "name": "zstandard",
+      "version": "0.25.0",
+      "purl": "pkg:pypi/zstandard@0.25.0",
+      "description": "",
+      "licenses": [
+        "NOASSERTION"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "unknown",
+      "externalRefs": [
+        {
+          "type": "pypi",
+          "reference": "zstandard/0.25.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "hs_tool:purpose",
+          "value": "runtime"
+        },
+        {
+          "name": "hs_tool:license_status",
+          "value": "unknown"
+        },
+        {
+          "name": "hs_tool:license_source",
+          "value": "unknown"
+        }
+      ]
+    }
+  ]
+}

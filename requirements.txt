@@ -1,0 +1,27 @@
+# H-S-Tool Runtime Dependencies
+# ==============================
+# This file contains runtime dependencies required for H-S-Tool to function.
+# All dependencies must have approved licenses (see docs/licensing/LICENSING_POLICY.md).
+#
+# License Status:
+#   ✅ Allowed: MIT, BSD-2-Clause, BSD-3-Clause, Apache-2.0, ISC, Python-2.0, Zlib, Unlicense
+#   ⚠️  Review Required: LGPL-2.1-only, LGPL-3.0-only, MPL-2.0, EPL-1.0, EPL-2.0, CDDL-1.0
+#   ❌ Forbidden: GPL-2.0, GPL-3.0, AGPL-3.0, SSPL-1.0, BSL-1.1, Commons Clause, Non-commercial
+#
+# To add a new dependency:
+#   1. Check its license at https://choosealicense.com/ or https://spdx.org/licenses/
+#   2. Ensure it's in the allowed list (see LICENSING_POLICY.md)
+#   3. Add it here with exact version
+#   4. Run: python tools/license_report.py --check
+#   5. Update SBOM: python tools/sbom_generate.py --update
+#   6. Update NOTICE: python tools/license_report.py --generate-notice
+
+# Core dependencies
+streamlit==1.65.0
+pandas==3.0.6
+numpy==2.5.4
+
+# Optional dependencies (for extended document support)
+# Uncomment if needed, but ensure license compliance
+# pdfplumber==0.10.3
+# python-docx==1.1.0

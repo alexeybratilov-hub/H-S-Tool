@@ -1,24 +1,47 @@
-.venv/
+﻿# Python
 __pycache__/
-*.pyc
+*.py[cod]
+*.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
 
-00_SYS/logs/
-00_SYS/backups/
-00_SYS/tmp/
-00_SYS/*.sqlite
-00_SYS/*.sqlite-journal
+# Virtual Environment
+.venv/
+env/
+ENV/
 
-02_COMPANIES/COMPANY_*
-02_COMPANIES/companies_registry.csv
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
 
-05_OUTPUTS/
+# OS Files
+.DS_Store
+Thumbs.db
 
-06_TESTS/**/real_*
+# Project Specific - IMPORTANT!
+# Exclude database to avoid committing sensitive or large binary data
+00_SYS/ot_local_agent.sqlite
+00_SYS/backups/*.sqlite
 
-*.docx
-*.xlsx
-*.pdf
-
-.env*.bak
-*.bak_*
-.streamlit/*.bak*
+# Temporary scripts often generated during development
+tools/_*.py

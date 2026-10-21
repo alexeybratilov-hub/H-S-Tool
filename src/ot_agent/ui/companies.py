@@ -58,7 +58,7 @@ def _display_company(company: dict) -> None:
 
 
 def render() -> None:
-    st.subheader("Companies")
+    st.subheader("\u041a\u043e\u043c\u043f\u0430\u043d\u0438\u0438")
 
     companies = list_companies()
 
@@ -119,7 +119,7 @@ def render() -> None:
             actual_address = st.text_area("Фактический адрес")
 
             phone = st.text_input("Телефон")
-            email = st.text_input("Email")
+            email = st.text_input("\u042d\u043b\u0435\u043a\u0442\u0440\u043e\u043d\u043d\u0430\u044f \u043f\u043e\u0447\u0442\u0430")
             industry_code = st.text_input("Код вида деятельности")
 
             headcount = st.number_input(

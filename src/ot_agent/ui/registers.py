@@ -38,7 +38,7 @@ def _rows_to_dataframe(
 
 
 def render() -> None:
-    st.subheader("Registers")
+    st.subheader("\u0420\u0435\u0435\u0441\u0442\u0440\u044b")
 
     company_id = render_company_selector(key="registers_company_selector")
 
